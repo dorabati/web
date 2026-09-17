@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Enlace directo al mapa del sitio (reemplazá con tu dominio real)
+Sitemap: https://dorabati.github.io/web/sitemap.xml
