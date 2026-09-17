@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    
+    <!-- Página Principal -->
+    <url>
+        <loc>https://dorabati.github.io/web/index.html</loc>
+        <lastmod>2026-03-01</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <!-- Subpágina Pastelería Premium & Festejos -->
+    <url>
+        <loc>https://dorabati.github.io/web/premium.html</loc>
+        <lastmod>2026-03-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Subpágina Menú Keto & Saludable -->
+    <url>
+        <loc>https://dorabati.github.io/web/keto.html</loc>
+        <lastmod>2026-03-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Subpágina Cumples Infantiles -->
+    <url>
+        <loc>https://dorabati.github.io/web/cumples.html</loc>
+        <lastmod>2026-03-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+</urlset>
