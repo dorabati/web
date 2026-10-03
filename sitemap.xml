@@ -3,7 +3,7 @@
     
     <!-- Página Principal -->
     <url>
-        <loc>https://dorabati.github.io/web/index.html</loc>
+        <loc>https://dorabati.com.ar/</loc>
         <lastmod>2026-03-01</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
@@ -11,7 +11,7 @@
 
     <!-- Subpágina Pastelería Premium & Festejos -->
     <url>
-        <loc>https://dorabati.github.io/web/premium.html</loc>
+        <loc>https://dorabati.com.ar/premium.html</loc>
         <lastmod>2026-03-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
@@ -19,7 +19,7 @@
 
     <!-- Subpágina Menú Keto & Saludable -->
     <url>
-        <loc>https://dorabati.github.io/web/keto.html</loc>
+        <loc>https://dorabati.com.ar/keto.html</loc>
         <lastmod>2026-03-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
@@ -27,7 +27,7 @@
 
     <!-- Subpágina Cumples Infantiles -->
     <url>
-        <loc>https://dorabati.github.io/web/cumples.html</loc>
+        <loc>https://dorabati.com.ar/cumples.html</loc>
         <lastmod>2026-03-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
