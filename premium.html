@@ -18,14 +18,14 @@
     <!-- SEO -->
     <title>Tortas y Pastelería Artesanal en Recoleta | Dora Batí</title>
 
-    <meta name="description" content="Tortas personalizadas, Matilda, cheesecake, budines, tartas y otras especialidades de pastelería artesanal. Elaboramos cada pedido fresco y a medida en Recoleta, CABA." />
+    <meta name="description" content="Tortas, Matilda, cheesecake, budines, tartas y otras especialidades de pastelería artesanal. Elaboramos cada pedido fresco y a medida en Recoleta, CABA." />
 
     <link rel="canonical" href="https://dorabati.com.ar/premium.html" />
 
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Tortas y Pastelería Artesanal | Dora Batí" />
-    <meta property="og:description" content="Tortas personalizadas, Matilda, cheesecake, budines y otras especialidades elaboradas a pedido en Recoleta." />
+    <meta property="og:description" content="Tortas, Matilda, cheesecake, budines y otras especialidades elaboradas a pedido en Recoleta." />
     <meta property="og:image" content="https://dorabati.com.ar/assets/img/premium/matilda.jpeg" />
     <meta property="og:url" content="https://dorabati.com.ar/premium.html" />
     <meta property="og:locale" content="es_AR" />
@@ -33,7 +33,7 @@
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Tortas y Pastelería Artesanal | Dora Batí" />
-    <meta name="twitter:description" content="Tortas personalizadas, Matilda, cheesecake, budines y otras especialidades elaboradas a pedido." />
+    <meta name="twitter:description" content="Tortas, Matilda, cheesecake, budines y otras especialidades elaboradas a pedido." />
     <meta name="twitter:image" content="https://dorabati.com.ar/assets/img/premium/matilda.jpeg" />
 
     <!-- Favicon -->
@@ -45,7 +45,7 @@
       "@context": "https://schema.org",
       "@type": "Bakery",
       "name": "Dora Batí",
-      "description": "Pastelería artesanal elaborada a pedido: tortas personalizadas, Matilda, cheesecake, budines, tartas y otras especialidades.",
+      "description": "Pastelería artesanal elaborada a pedido: tortas, Matilda, cheesecake, budines, tartas y otras especialidades.",
       "url": "https://dorabati.com.ar/premium.html",
       "image": "https://dorabati.com.ar/assets/img/premium/matilda.jpeg",
       "telephone": "+5491123843612",
@@ -68,55 +68,100 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto+Slab:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&family=Roboto+Slab:wght@500;600;700&display=swap" rel="stylesheet" />
 
     <style>
 
+        :root {
+            --rosa-nube: #FBF1F5;
+            --rosa: #E4BACD;
+            --chocolate: #573619;
+            --malva: #8A5A77;
+            --salvia: #4F7355;
+        }
+
         body {
-            font-family: 'Montserrat', sans-serif;
-            background-color: #f8f9fa;
-            color: #212529;
+            font-family: 'Jost', sans-serif;
+            background-color: var(--rosa-nube);
+            color: var(--chocolate);
         }
 
         h1, h2, h3, h4, h5 {
             font-family: 'Roboto Slab', serif;
             font-weight: 700;
+            color: var(--chocolate);
         }
+
+        /* NAVBAR */
 
         .navbar {
-            background-color: #2b1d19 !important;
-            padding: 1rem 0;
+            background-color: var(--chocolate) !important;
+            padding: 0.9rem 0;
         }
 
+        .navbar-brand {
+            color: #fff !important;
+            font-weight: 600;
+        }
+
+        .navbar-brand:hover {
+            color: var(--rosa) !important;
+        }
+
+        .navbar-text {
+            color: #fff !important;
+        }
+
+        /* HEADER */
+
         .header-catalog {
-            background-color: #2b1d19;
+            background-color: var(--chocolate);
             color: #fff;
-            padding: 55px 0 40px;
+            padding: 55px 0 45px;
         }
 
         .header-catalog h1 {
             max-width: 850px;
             margin: 0 auto;
+            color: var(--rosa);
         }
+
+        .header-catalog p {
+            max-width: 760px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* INTRO */
 
         .intro-note {
-            background-color: #fff;
-            border-radius: 14px;
-            padding: 20px 25px;
-            box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+            background-color: var(--rosa);
+            border-radius: 18px;
+            padding: 22px 26px;
+            color: var(--chocolate);
         }
 
+        .intro-note h2 {
+            color: var(--chocolate);
+        }
+
+        .intro-note p {
+            color: var(--chocolate) !important;
+        }
+
+        /* CARDS */
+
         .card-product {
-            border: none;
-            border-radius: 16px;
+            border: 1px solid rgba(87, 54, 25, 0.10);
+            border-radius: 18px;
             overflow: hidden;
             transition: transform 0.2s, box-shadow 0.2s;
-            background: #fff;
+            background: rgba(255, 255, 255, 0.58);
         }
 
         .card-product:hover {
             transform: translateY(-4px);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+            box-shadow: 0 10px 24px rgba(87, 54, 25, 0.12) !important;
         }
 
         .card-img-container {
@@ -131,37 +176,123 @@
             object-fit: cover;
         }
 
+        .card-body {
+            background: transparent;
+        }
+
+        .card-product h3 {
+            color: var(--chocolate);
+        }
+
+        .card-product .text-muted {
+            color: #6f625d !important;
+        }
+
         .price-tag {
             font-size: 1.15rem;
-            color: #2b1d19;
+            color: var(--malva);
             font-weight: 700;
         }
+
+        /* BUTTONS */
+
+        .btn-outline-dark {
+            color: var(--chocolate);
+            border-color: var(--chocolate);
+        }
+
+        .btn-outline-dark:hover {
+            background-color: var(--chocolate);
+            border-color: var(--chocolate);
+            color: #fff;
+        }
+
+        .btn-dark {
+            background-color: var(--chocolate);
+            border-color: var(--chocolate);
+        }
+
+        .btn-dark:hover {
+            background-color: var(--malva);
+            border-color: var(--malva);
+        }
+
+        /* CONTACTO */
+
+        .contact-section {
+            padding-top: 45px;
+            padding-bottom: 55px;
+        }
+
+        .contact-section h2 {
+            color: var(--chocolate);
+        }
+
+        /* WHATSAPP */
 
         .btn-whatsapp-float {
             position: fixed;
             bottom: 25px;
             right: 25px;
-            background-color: #25D366;
+            background-color: var(--malva);
             color: #fff;
             border-radius: 50px;
             padding: 12px 24px;
             font-weight: 600;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+            box-shadow: 0 4px 12px rgba(87, 54, 25, 0.25);
             z-index: 1000;
             display: flex;
             align-items: center;
             gap: 10px;
             text-decoration: none;
-            transition: transform 0.2s;
+            transition: transform 0.2s, background-color 0.2s;
         }
 
         .btn-whatsapp-float:hover {
-            background-color: #1eb954;
+            background-color: var(--chocolate);
             color: #fff;
             transform: scale(1.05);
         }
 
+        /* MODALES */
+
+        .modal-content {
+            border: none;
+            border-radius: 18px;
+            overflow: hidden;
+        }
+
+        .modal-header {
+            background-color: var(--chocolate) !important;
+        }
+
+        .modal-title {
+            color: var(--rosa) !important;
+        }
+
+        .modal-body {
+            color: var(--chocolate);
+        }
+
+        .modal-body .text-muted {
+            color: #6f625d !important;
+        }
+
+        .list-group-item {
+            background-color: transparent;
+            border-color: rgba(87, 54, 25, 0.10);
+        }
+
+        /* FOOTER */
+
+        footer {
+            background-color: var(--chocolate) !important;
+        }
+
+        /* MOBILE */
+
         @media (max-width: 576px) {
+
             .btn-whatsapp-float {
                 right: 15px;
                 bottom: 15px;
@@ -179,6 +310,11 @@
             .header-catalog h1 {
                 font-size: 2rem;
             }
+
+            .card-img-container {
+                height: 180px;
+            }
+
         }
 
     </style>
@@ -190,11 +326,11 @@
     <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
         <div class="container">
 
-            <a class="navbar-brand text-warning" href="index.html">
+            <a class="navbar-brand" href="index.html">
                 <i class="fas fa-arrow-left me-2"></i>Volver al inicio
             </a>
 
-            <span class="navbar-text text-white fw-bold">
+            <span class="navbar-text fw-bold">
                 Pastelería Dora Batí
             </span>
 
@@ -206,7 +342,7 @@
     <header class="header-catalog text-center">
         <div class="container">
 
-            <h1 class="text-warning mb-3">
+            <h1 class="mb-3">
                 Tortas y Pastelería Artesanal
             </h1>
 
@@ -232,10 +368,11 @@
                     ¿Buscás una versión diferente?
                 </h2>
 
-                <p class="mb-0 text-muted">
+                <p class="mb-0">
                     Algunos productos también pueden prepararse sin azúcar agregada,
                     bajos en carbohidratos o en versión keto. Según el producto,
-                    podemos hacer otras adaptaciones alimentarias. Consultanos y vemos juntos qué opción se adapta mejor a lo que necesitás.
+                    podemos hacer otras adaptaciones alimentarias. Consultanos y vemos
+                    juntos qué opción se adapta mejor a lo que necesitás.
                 </p>
 
             </div>
@@ -251,7 +388,7 @@
             <div class="row g-4">
 
 
-                <!-- TORTA FESTEJO ÍNTIMO -->
+                <!-- TORTA PARA COMPARTIR -->
                 <div class="col-md-6 col-lg-4">
 
                     <div class="card card-product shadow-sm h-100">
@@ -260,14 +397,14 @@
                             <img
                                 src="assets/img/premium/simple.jpeg"
                                 class="card-img-top"
-                                alt="Torta personalizada para festejo íntimo"
+                                alt="Torta para compartir"
                             />
                         </div>
 
                         <div class="card-body p-4 text-center d-flex flex-column">
 
                             <h3 class="h5">
-                                Festejo Íntimo
+                                Torta para Compartir
                             </h3>
 
                             <p class="text-muted small mb-2">
@@ -301,7 +438,7 @@
                             <img
                                 src="assets/img/premium/doble.jpg"
                                 class="card-img-top"
-                                alt="Torta personalizada para gran celebración"
+                                alt="Torta para gran celebración"
                             />
                         </div>
 
@@ -356,7 +493,7 @@
                                 Bien chocolatoza, húmeda y con ganache de chocolate.
                             </p>
 
-                            <p class="price-tag mb-3">
+                            <p class="price-tag mt-auto mb-0">
                                 $35.000
                             </p>
 
@@ -492,7 +629,7 @@
                             <img
                                 src="assets/img/premium/sueno.jpeg"
                                 class="card-img-top"
-                                alt="Torta Sueño de Coco de chocolate y coco"
+                                alt="Torta Sueño de Coco"
                             />
                         </div>
 
@@ -647,7 +784,7 @@
                 </div>
 
 
-                <!-- BROWNIE -->
+                <!-- BROWNIES -->
                 <div class="col-md-6 col-lg-4">
 
                     <div class="card card-product shadow-sm h-100">
@@ -693,7 +830,7 @@
 
 
     <!-- CONTACTO -->
-    <section class="py-5">
+    <section class="contact-section">
         <div class="container">
 
             <div class="text-center">
@@ -711,8 +848,7 @@
                     href="https://wa.me/5491123843612?text=Hola%2C%20quisiera%20hacer%20una%20consulta%20sobre%20pasteler%C3%ADa"
                     target="_blank"
                     rel="noopener"
-                    class="btn btn-dark rounded-pill px-4"
-                >
+                    class="btn btn-dark rounded-pill px-4">
                     Consultar por WhatsApp
                 </a>
 
@@ -728,24 +864,25 @@
         target="_blank"
         rel="noopener"
         class="btn-whatsapp-float"
-        aria-label="Consultar por WhatsApp"
-    >
+        aria-label="Consultar por WhatsApp">
+
         <i class="fab fa-whatsapp fs-4"></i>
         <span>Consultar</span>
+
     </a>
 
 
-    <!-- MODAL TORTA FESTEJO ÍNTIMO -->
+    <!-- MODAL TORTA PARA COMPARTIR -->
     <div class="modal fade" id="modalPersonalizadaS" tabindex="-1" aria-hidden="true">
 
         <div class="modal-dialog modal-dialog-centered">
 
             <div class="modal-content">
 
-                <div class="modal-header bg-dark text-white">
+                <div class="modal-header text-white">
 
                     <h5 class="modal-title">
-                        Festejo Íntimo
+                        Torta para Compartir
                     </h5>
 
                     <button
@@ -811,7 +948,7 @@
 
             <div class="modal-content">
 
-                <div class="modal-header bg-dark text-white">
+                <div class="modal-header text-white">
 
                     <h5 class="modal-title">
                         Gran Celebración
@@ -880,7 +1017,7 @@
 
             <div class="modal-content">
 
-                <div class="modal-header bg-dark text-white">
+                <div class="modal-header text-white">
 
                     <h5 class="modal-title">
                         Matilda Cremosa
@@ -904,7 +1041,7 @@
                     <ul class="list-unstyled mb-0">
 
                         <li class="mb-3">
-                            <strong>Festejo Íntimo:</strong>
+                            <strong>Torta para Compartir:</strong>
                             una capa generosa de relleno.
                         </li>
 
@@ -931,7 +1068,7 @@
 
             <div class="modal-content">
 
-                <div class="modal-header bg-dark text-white">
+                <div class="modal-header text-white">
 
                     <h5 class="modal-title">
                         Selva Negra
@@ -951,7 +1088,7 @@
                     <ul class="list-unstyled mb-0">
 
                         <li class="mb-3">
-                            <strong>Festejo Íntimo:</strong>
+                            <strong>Torta para Compartir:</strong>
                             $45.000
                         </li>
 
@@ -978,7 +1115,7 @@
 
             <div class="modal-content">
 
-                <div class="modal-header bg-dark text-white">
+                <div class="modal-header text-white">
 
                     <h5 class="modal-title">
                         Sueño de Coco
@@ -998,7 +1135,7 @@
                     <ul class="list-unstyled mb-0">
 
                         <li class="mb-3">
-                            <strong>Festejo Íntimo:</strong>
+                            <strong>Torta para Compartir:</strong>
                             $45.000
                         </li>
 
@@ -1025,7 +1162,7 @@
 
             <div class="modal-content">
 
-                <div class="modal-header bg-dark text-white">
+                <div class="modal-header text-white">
 
                     <h5 class="modal-title">
                         Chocotorta
@@ -1063,7 +1200,7 @@
 
             <div class="modal-content">
 
-                <div class="modal-header bg-dark text-white">
+                <div class="modal-header text-white">
 
                     <h5 class="modal-title">
                         Brownie
@@ -1110,7 +1247,7 @@
 
             <div class="modal-content">
 
-                <div class="modal-header bg-dark text-white">
+                <div class="modal-header text-white">
 
                     <h5 class="modal-title">
                         Budines Artesanales
@@ -1171,7 +1308,7 @@
 
             <div class="modal-content">
 
-                <div class="modal-header bg-dark text-white">
+                <div class="modal-header text-white">
 
                     <h5 class="modal-title">
                         Tartas Dulces
@@ -1212,7 +1349,7 @@
 
 
     <!-- FOOTER -->
-    <footer class="bg-dark text-white text-center py-4">
+    <footer class="text-white text-center py-4">
 
         <p class="mb-1">
             Dora Batí · Pastelería artesanal
@@ -1234,3 +1371,4 @@
 
 </body>
 </html>
+```
