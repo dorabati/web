@@ -1,505 +1,444 @@
-<!DOCTYPE html>
 
+<!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-```
-<title>Pastelería Artesanal en Recoleta | Tortas a Medida & Sin Azúcar | Dora Batí</title>
+    <title>Pastelería Artesanal en Recoleta | Tortas, Meriendas y Viandas | Dora Batí</title>
+    <meta name="description" content="Tortas artesanales, desayunos y meriendas, postres individuales, salados y viandas elaborados a pedido en Recoleta, CABA.">
+    <link rel="canonical" href="https://dorabati.com.ar/">
 
-<meta name="description" content="Pastelería artesanal en Recoleta, CABA. Tortas a medida, opciones sin azúcar agregada, aptas para diabéticos, keto y low carb. Elaboramos según tus necesidades.">
+    <!-- Open Graph -->
+    <meta property="og:title" content="Pastelería Artesanal en Recoleta | Dora Batí">
+    <meta property="og:description" content="Tortas, meriendas, postres individuales, salados, viandas y cumples. Todo hecho a tu medida.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://dorabati.com.ar/">
+    <meta property="og:image" content="https://dorabati.com.ar/assets/img/header-bg.png">
+    <meta property="og:locale" content="es_AR">
 
-<link rel="canonical" href="https://dorabati.com.ar/">
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Pastelería Artesanal en Recoleta | Dora Batí">
+    <meta name="twitter:description" content="Tortas, meriendas, postres individuales, salados, viandas y opciones para cumples. Todo hecho a tu medida.">
+    <meta name="twitter:image" content="https://dorabati.com.ar/assets/img/header-bg.png">
 
-<!-- Open Graph -->
-<meta property="og:title" content="Pastelería Artesanal en Recoleta | Dora Batí">
-<meta property="og:description" content="Tortas a medida, pastelería sin azúcar agregada, opciones keto y low carb, y viandas hechas a pedido.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://dorabati.com.ar/">
-<meta property="og:image" content="https://dorabati.com.ar/assets/img/header-bg.png">
-<meta property="og:locale" content="es_AR">
+    <!-- Favicon -->
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
 
-<!-- Twitter -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Pastelería Artesanal en Recoleta | Dora Batí">
-<meta name="twitter:description" content="Tortas a medida, opciones sin azúcar agregada, keto, low carb y viandas hechas a pedido.">
-<meta name="twitter:image" content="https://dorabati.com.ar/assets/img/header-bg.png">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto+Slab:wght@500;600;700&display=swap" rel="stylesheet">
 
-<!-- Favicon -->
-<link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
-<!-- Google Fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto+Slab:wght@500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
 
-<!-- Bootstrap -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y6DNZGLE23"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-Y6DNZGLE23');
+    </script>
 
-<!-- Font Awesome -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-
-<!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-Y6DNZGLE23"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-Y6DNZGLE23');
-</script>
-
-<!-- Schema.org -->
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "Bakery",
-    "name": "Dora Batí",
-    "description": "Pastelería artesanal y viandas elaboradas a pedido, con opciones sin azúcar agregada, keto y low carb.",
-    "url": "https://dorabati.com.ar/",
-    "image": "https://dorabati.com.ar/assets/img/header-bg.png",
-    "telephone": "+5491123843612",
-    "priceRange": "$$",
-    "servesCuisine": "Pastelería artesanal",
-    "areaServed": {
-        "@type": "City",
-        "name": "Buenos Aires"
-    },
-    "sameAs": [
-        "https://instagram.com/dorabati.pasteleria"
-    ]
-}
-</script>
-
-<style>
-    body {
-        font-family: 'Montserrat', sans-serif;
-        color: #3d302c;
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Bakery",
+        "name": "Dora Batí",
+        "description": "Pastelería artesanal elaborada a pedido: tortas, meriendas, postres individuales, salados, viandas y opciones para cumples. Versiones clásicas, sin azúcar agregada y adaptaciones según el producto.",
+        "url": "https://dorabati.com.ar/",
+        "image": "https://dorabati.com.ar/assets/img/header-bg.png",
+        "telephone": "+5491123843612",
+        "priceRange": "$$",
+        "servesCuisine": "Pastelería artesanal",
+        "areaServed": {
+            "@type": "City",
+            "name": "Buenos Aires"
+        },
+        "sameAs": [
+            "https://instagram.com/dorabati.pasteleria"
+        ]
     }
+    </script>
 
-    h1, h2, h3, h4, h5 {
-        font-family: 'Roboto Slab', serif;
-    }
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            color: #3d302c;
+        }
 
-    .hero {
-        min-height: 75vh;
-        background-image:
-            linear-gradient(rgba(45, 30, 25, 0.55), rgba(45, 30, 25, 0.55)),
-            url('assets/img/header-bg.png');
-        background-size: cover;
-        background-position: center;
-        display: flex;
-        align-items: center;
-    }
+        h1, h2, h3, h4, h5 {
+            font-family: 'Roboto Slab', serif;
+        }
 
-    .hero-content {
-        max-width: 850px;
-    }
+        .hero {
+            min-height: 75vh;
+            background-image:
+                linear-gradient(rgba(45, 30, 25, 0.55), rgba(45, 30, 25, 0.55)),
+                url('assets/img/header-bg.png');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+        }
 
-    .kicker {
-        color: #f5d76e;
-        font-weight: 600;
-        letter-spacing: 1px;
-    }
+        .hero-content {
+            max-width: 850px;
+        }
 
-    .accent {
-        color: #f5d76e;
-    }
+        .kicker {
+            color: #f5d76e;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
 
-    /* TARJETAS DE CATÁLOGO */
+        .accent {
+            color: #f5d76e;
+        }
 
-    .catalog-link {
-        display: block;
-        color: inherit;
-        text-decoration: none;
-        height: 100%;
-    }
+        .catalog-link {
+            display: block;
+            color: inherit;
+            text-decoration: none;
+            height: 100%;
+        }
 
-    .catalog-link:hover {
-        color: inherit;
-        text-decoration: none;
-    }
+        .catalog-link:hover {
+            color: inherit;
+            text-decoration: none;
+        }
 
-    .catalog-card {
-        transition: transform 0.2s ease, box-shadow 0.2s ease;
-        cursor: pointer;
-    }
+        .catalog-card {
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            cursor: pointer;
+        }
 
-    .catalog-card:hover {
-        transform: translateY(-4px);
-        box-shadow: 0 10px 25px rgba(0,0,0,0.12);
-    }
+        .catalog-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+        }
 
-    /* Mantiene la foto completa, sin recortarla */
-    .catalog-card img {
-        width: 100%;
-        height: auto;
-        display: block;
-    }
+        /* Mantiene la foto completa, sin recortarla */
+        .catalog-card img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
 
-    footer {
-        background: #3d302c;
-        color: #fff;
-    }
+        footer {
+            background: #3d302c;
+            color: #fff;
+        }
 
-    footer a {
-        color: #fff;
-        text-decoration: none;
-    }
+        footer a {
+            color: #fff;
+            text-decoration: none;
+        }
 
-    footer a:hover {
-        text-decoration: underline;
-    }
-</style>
-```
+        footer a:hover {
+            text-decoration: underline;
+        }
 
+        #hecho-a-tu-medida h2 {
+            color: #3d302c;
+        }
+
+        #hecho-a-tu-medida .border {
+            border-color: rgba(61, 48, 44, 0.15) !important;
+        }
+    </style>
 </head>
 
 <body>
 
-```
-<!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top">
-    <div class="container">
-
-        <a class="navbar-brand fw-bold" href="index.html">
-            Pastelería Dora Batí
-        </a>
-
-        <button class="navbar-toggler" type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarNav"
-                aria-controls="navbarNav"
-                aria-expanded="false"
-                aria-label="Abrir menú">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-
-                <li class="nav-item">
-                    <a class="nav-link" href="#catalogos">
-                        Minicatálogos
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="#contacto">
-                        Contacto
-                    </a>
-                </li>
-
-            </ul>
-        </div>
-
-    </div>
-</nav>
-
-
-<!-- HERO -->
-<header class="hero text-white">
-
-    <div class="container">
-
-        <div class="hero-content">
-
-            <p class="kicker text-uppercase mb-3">
-                PASTELERÍA ARTESANAL EN RECOLETA
-            </p>
-
-            <h1 class="display-4 fw-bold mb-4">
-                Pastelería artesanal y menús a medida
-            </h1>
-
-            <p class="fs-5 text-light mb-4">
-                Tortas de festejo, especialidades sin azúcar agregada y viandas para tu día a día.
-                Todo elaborado fresco y a pedido.
-            </p>
-
-            <p class="fs-5 text-light mb-4">
-                Adaptamos nuestros productos según tus necesidades: opciones sin azúcar agregada,
-                bajas en carbohidratos, keto o, según el producto, también sin lactosa y otras
-                adaptaciones alimentarias.
-            </p>
-
-            <a href="#catalogos" class="btn btn-warning btn-lg px-4">
-                Ver opciones
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                Pastelería Dora Batí
             </a>
 
-        </div>
+            <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Abrir menú">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-    </div>
-
-</header>
-
-
-<!-- CATALOGOS -->
-<section id="catalogos" class="py-5">
-
-    <div class="container">
-
-        <div class="text-center mb-5">
-
-            <h2 class="fw-bold">
-                Conocé nuestras opciones
-            </h2>
-
-            <p class="text-muted">
-                Elegí una categoría para ver productos, fotos y precios.
-            </p>
-
-        </div>
-
-
-        <div class="row g-4">
-
-
-            <!-- PREMIUM -->
-            <div class="col-md-4">
-
-                <a href="premium.html" class="catalog-link">
-
-                    <div class="card catalog-card h-100 border-0 shadow-sm">
-
-                        <img
-                            src="assets/img/cat-premium.JPG"
-                            class="card-img-top"
-                            alt="Tortas y pastelería sin azúcar agregada en Recoleta"
-                        >
-
-                        <div class="card-body d-flex flex-column">
-
-                            <h3 class="h4">
-                                Pastelería Premium
-                            </h3>
-
-                            <p class="text-muted">
-                                Tortas, budines y especialidades para disfrutar todos los días
-                                o para compartir en una ocasión especial.
-                            </p>
-
-                            <span class="btn btn-outline-dark mt-auto">
-                                Conocé el catálogo
-                            </span>
-
-                        </div>
-
-                    </div>
-
-                </a>
-
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#catalogos">Catálogos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
             </div>
-
-
-            <!-- KETO -->
-            <div class="col-md-4">
-
-                <a href="keto.html" class="catalog-link">
-
-                    <div class="card catalog-card h-100 border-0 shadow-sm">
-
-                        <img
-                            src="assets/img/cat-keto.JPG"
-                            class="card-img-top"
-                            alt="Pastelería keto y opciones bajas en carbohidratos en Recoleta"
-                        >
-
-                        <div class="card-body d-flex flex-column">
-
-                            <h3 class="h4">
-                                Keto & Low Carb
-                            </h3>
-
-                            <p class="text-muted">
-                                Opciones sin azúcar agregada y bajas en carbohidratos,
-                                pensadas para incorporar lo dulce y lo salado a tu día a día.
-                            </p>
-
-                            <span class="btn btn-outline-dark mt-auto">
-                                Conocé el catálogo
-                            </span>
-
-                        </div>
-
-                    </div>
-
-                </a>
-
-            </div>
-
-
-            <!-- CUMPLES -->
-            <div class="col-md-4">
-
-                <a href="cumples.html" class="catalog-link">
-
-                    <div class="card catalog-card h-100 border-0 shadow-sm">
-
-                        <img
-                            src="assets/img/cat-cumples.JPG"
-                            class="card-img-top"
-                            alt="Tortas y dulces para cumpleaños en Recoleta"
-                        >
-
-                        <div class="card-body d-flex flex-column">
-
-                            <h3 class="h4">
-                                Cumples & Festejos
-                            </h3>
-
-                            <p class="text-muted">
-                                Tortas, cupcakes, mini budines, galletitas y otras opciones
-                                para acompañar tus festejos.
-                            </p>
-
-                            <span class="btn btn-outline-dark mt-auto">
-                                Conocé el catálogo
-                            </span>
-
-                        </div>
-
-                    </div>
-
-                </a>
-
-            </div>
-
         </div>
+    </nav>
 
-    </div>
-
-</section>
-
-
-<!-- CONTACTO -->
-<section id="contacto" class="py-5 bg-light">
-
-    <div class="container">
-
-        <div class="row justify-content-center">
-
-            <div class="col-lg-8 text-center">
-
-                <h2 class="fw-bold mb-3">
-                    ¿Buscás algo en particular?
-                </h2>
-
-                <p class="text-muted mb-4">
-                    Contame qué necesitás y para qué fecha, y te asesoro directamente por WhatsApp.
+    <!-- HERO -->
+    <header class="hero text-white">
+        <div class="container">
+            <div class="hero-content">
+                <p class="kicker text-uppercase mb-3">
+                    PASTELERÍA ARTESANAL EN RECOLETA
                 </p>
 
-                <a
-                    href="https://wa.me/5491123843612?text=Hola%2C%20quisiera%20hacer%20una%20consulta"
-                    target="_blank"
-                    rel="noopener"
-                    class="btn btn-success btn-lg px-4"
-                >
-                    Consultar por WhatsApp
+                <h1 class="display-4 fw-bold mb-4">
+                    Pastelería artesanal
+                    <span class="accent">hecha a tu medida</span>
+                </h1>
+
+                <p class="fs-5 text-light mb-4">
+                    Tortas, meriendas, postres individuales, salados,
+                    viandas y opciones para cumples.
+                    Todo elaborado fresco y a pedido.
+                </p>
+
+                <a class="btn btn-warning btn-lg px-4" href="#catalogos">
+                    Ver opciones
                 </a>
-
             </div>
-
         </div>
+    </header>
 
-    </div>
+    <!-- CATÁLOGOS -->
+    <section class="py-5" id="catalogos">
+        <div class="container">
 
-</section>
-
-
-<!-- FOOTER -->
-<footer class="py-5">
-
-    <div class="container">
-
-        <div class="row g-4">
-
-
-            <!-- INFO -->
-            <div class="col-md-4">
-
-                <h3 class="h5 mb-3">
-                    Dora Batí
-                </h3>
-
-                <p class="mb-2">
-                    Pastelería artesanal y viandas hechas a pedido.
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Conocé nuestras opciones</h2>
+                <p class="text-muted">
+                    Elegí una categoría para ver productos, fotos y precios.
                 </p>
-
-                <p class="mb-0">
-                    Producción en Recoleta, CABA. Retiros y envíos.
-                </p>
-
             </div>
 
+            <div class="row g-4">
 
-            <!-- CONTACTO -->
-            <div class="col-md-4">
+                <!-- TORTAS -->
+                <div class="col-md-6 col-lg-4">
+                    <a class="catalog-link" href="tortas.html">
+                        <div class="card catalog-card h-100 border-0 shadow-sm">
+                            <img src="assets/img/cat-premium.JPG"
+                                class="card-img-top" alt="Tortas de Dora Batí">
 
-                <h3 class="h5 mb-3">
-                    Contacto
-                </h3>
+                            <div class="card-body d-flex flex-column">
+                                <h3 class="h4">Tortas</h3>
+                                <p class="text-muted">
+                                    Tortas artesanales, Matilda, cheesecake
+                                    y especialidades para compartir momentos dulces.
+                                </p>
+                                <span class="btn btn-outline-dark mt-auto">
+                                    Conocé el catálogo
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
 
-                <p class="mb-2">
+                <!-- MERIENDAS Y DESAYUNOS -->
+                <div class="col-md-6 col-lg-4">
+                    <a class="catalog-link" href="meriendas.html">
+                        <div class="card catalog-card h-100 border-0 shadow-sm">
+                            <div class="card-body d-flex flex-column">
+                                <h3 class="h4">Meriendas y desayunos</h3>
+                                <p class="text-muted">
+                                    Panes, budines, tartas dulces, brownies,
+                                    cuadrados, galletitas y scones para disfrutar cada día.
+                                </p>
+                                <span class="btn btn-outline-dark mt-auto">
+                                    Conocé el catálogo
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
 
-                    <a
-                        href="https://wa.me/5491123843612"
-                        target="_blank"
-                        rel="noopener"
-                    >
-                        WhatsApp
+                <!-- POSTRES INDIVIDUALES -->
+                <div class="col-md-6 col-lg-4">
+                    <a class="catalog-link" href="postres.html">
+                        <div class="card catalog-card h-100 border-0 shadow-sm">
+                            <img src="assets/img/cat-keto.JPG"
+                                class="card-img-top" alt="Postres individuales de Dora Batí">
+
+                            <div class="card-body d-flex flex-column">
+                                <h3 class="h4">Postres individuales</h3>
+                                <p class="text-muted">
+                                    Postres keto y light, porciones controladas
+                                    y packs para darte un gusto.
+                                </p>
+                                <span class="btn btn-outline-dark mt-auto">
+                                    Conocé el catálogo
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- SALADOS Y VIANDAS -->
+                <div class="col-md-6 col-lg-4">
+                    <a class="catalog-link" href="salados.html">
+                        <div class="card catalog-card h-100 border-0 shadow-sm">
+                            <div class="card-body d-flex flex-column">
+                                <h3 class="h4">Salados y viandas</h3>
+                                <p class="text-muted">
+                                    Tartas saladas, prepizzas y viandas caseras,
+                                    elaboradas a pedido.
+                                </p>
+                                <span class="btn btn-outline-dark mt-auto">
+                                    Conocé el catálogo
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- CUMPLES -->
+                <div class="col-md-6 col-lg-4">
+                    <a class="catalog-link" href="cumples.html">
+                        <div class="card catalog-card h-100 border-0 shadow-sm">
+                            <img src="assets/img/cat-cumples.JPG"
+                                class="card-img-top" alt="Opciones para cumples de Dora Batí">
+
+                            <div class="card-body d-flex flex-column">
+                                <h3 class="h4">Cumples</h3>
+                                <p class="text-muted">
+                                    Opciones dulces para celebrar y compartir.
+                                </p>
+                                <span class="btn btn-outline-dark mt-auto">
+                                    Conocé el catálogo
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- HECHO A TU MEDIDA -->
+    <section class="py-5 bg-light" id="hecho-a-tu-medida">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+
+                    <h2 class="fw-bold text-center mb-4">
+                        Hecho a tu medida.
+                    </h2>
+
+                    <p class="mb-4">
+                        Todo lo que elaboramos puede prepararse en versión clásica
+                        o sin azúcar agregada, con ingredientes de bajo índice
+                        glucémico, pensada para personas con diabetes.
+                        Muchas recetas con harina de almendras son low carb
+                        y varias son keto.
+                        En algunos productos también ofrecemos una versión con
+                        harina de trigo integral, más económica.
+                        Según el pedido, podemos hacerlo con o sin lactosa.
+                        Ante dudas sobre tu alimentación, consultá con tu médico
+                        o nutricionista.
+                    </p>
+
+                    <div class="border rounded p-4 bg-white">
+                        <h3 class="h5 fw-bold mb-3">Importante.</h3>
+                        <p class="mb-0">
+                            Usamos ingredientes sin TACC, pero cocinamos otros
+                            productos con gluten en el mismo taller, por lo que
+                            no podemos asegurar que no haya contaminación cruzada.
+                            Nuestros productos no son aptos para celíacos ni
+                            para alergias severas.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="py-5 bg-light" id="contacto">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+
+                    <h2 class="fw-bold mb-3">
+                        ¿Buscás algo en particular?
+                    </h2>
+
+                    <p class="text-muted mb-4">
+                        Contame qué necesitás y para qué fecha,
+                        y te asesoro directamente por WhatsApp.
+                    </p>
+
+                    <a class="btn btn-success btn-lg px-4"
+                        href="https://wa.me/5491123843612?text=Hola%2C%20quisiera%20hacer%20una%20consulta"
+                        rel="noopener" target="_blank">
+                        Consultar por WhatsApp
                     </a>
 
-                </p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                <p class="mb-0">
+    <!-- FOOTER -->
+    <footer class="py-5">
+        <div class="container">
+            <div class="row g-4">
 
-                    <a
-                        href="https://instagram.com/dorabati.pasteleria"
-                        target="_blank"
-                        rel="noopener"
-                    >
-                        Instagram
-                    </a>
+                <div class="col-md-4">
+                    <h3 class="h5 mb-3">Dora Batí</h3>
+                    <p class="mb-2">
+                        Pastelería artesanal hecha a pedido: tortas,
+                        meriendas, postres, salados y viandas.
+                    </p>
+                    <p class="mb-0">
+                        Producción en Recoleta, CABA. Retiros y envíos.
+                    </p>
+                </div>
 
-                </p>
+                <div class="col-md-4">
+                    <h3 class="h5 mb-3">Contacto</h3>
+                    <p class="mb-2">
+                        <a href="https://wa.me/5491123843612"
+                            rel="noopener" target="_blank">WhatsApp</a>
+                    </p>
+                    <p class="mb-0">
+                        <a href="https://instagram.com/dorabati.pasteleria"
+                            rel="noopener" target="_blank">Instagram</a>
+                    </p>
+                </div>
+
+                <div class="col-md-4">
+                    <h3 class="h5 mb-3">Cómo trabajamos</h3>
+                    <p class="mb-0">
+                        Trabajamos online y elaboramos cada pedido fresco,
+                        especialmente para vos.
+                    </p>
+                </div>
 
             </div>
 
+            <hr class="my-4">
 
-            <!-- MODALIDAD -->
-            <div class="col-md-4">
-
-                <h3 class="h5 mb-3">
-                    Cómo trabajamos
-                </h3>
-
-                <p class="mb-0">
-                    Trabajamos online y elaboramos cada pedido fresco,
-                    especialmente para vos.
-                </p>
-
+            <div class="text-center small">
+                © 2026 Dora Batí. Todos los derechos reservados.
             </div>
-
         </div>
+    </footer>
 
-
-        <hr class="my-4">
-
-
-        <div class="text-center small">
-            © 2026 Dora Batí. Todos los derechos reservados.
-        </div>
-
-    </div>
-
-</footer>
-
-
-<!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-```
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
