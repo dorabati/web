@@ -1,0 +1,517 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Tortas artesanales en Recoleta | Dora Batí</title>
+    <meta name="description" content="Tortas artesanales elaboradas a pedido en Recoleta, CABA. Tortas personalizadas, Matilda, cheesecake, Selva Negra, Sueño de Coco y Chocotorta.">
+
+    <link rel="canonical" href="https://dorabati.com.ar/tortas.html">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Tortas artesanales | Dora Batí">
+    <meta property="og:description" content="Chocolate real y preparaciones artesanales para compartir momentos dulces.">
+    <meta property="og:url" content="https://dorabati.com.ar/tortas.html">
+    <meta property="og:image" content="https://dorabati.com.ar/assets/img/premium/matilda.jpeg">
+    <meta property="og:locale" content="es_AR">
+
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&family=Roboto+Slab:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y6DNZGLE23"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-Y6DNZGLE23');
+    </script>
+
+    <style>
+        :root {
+            --rosa-nube: #FBF1F5;
+            --rosa: #E4BACD;
+            --chocolate: #573619;
+            --malva: #8A5A77;
+        }
+
+        body {
+            font-family: 'Jost', sans-serif;
+            background: var(--rosa-nube);
+            color: var(--chocolate);
+        }
+
+        h1, h2, h3, h4, h5 {
+            font-family: 'Roboto Slab', serif;
+            font-weight: 700;
+        }
+
+        .navbar {
+            background: var(--chocolate);
+            padding: 14px 0;
+        }
+
+        .navbar-brand {
+            color: white;
+            font-weight: 600;
+        }
+
+        .navbar-brand:hover {
+            color: var(--rosa);
+        }
+
+        .header-catalog {
+            background: var(--chocolate);
+            color: white;
+            padding: 55px 0 45px;
+        }
+
+        .header-catalog h1 {
+            color: var(--rosa);
+        }
+
+        .header-catalog p {
+            max-width: 760px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .intro-note {
+            background: var(--rosa);
+            border-radius: 18px;
+            padding: 22px 26px;
+        }
+
+        .card-product {
+            border: 1px solid rgba(87, 54, 25, 0.10);
+            border-radius: 18px;
+            overflow: hidden;
+            background: rgba(255, 255, 255, 0.7);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .card-product:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 24px rgba(87, 54, 25, 0.12);
+        }
+
+        .card-img-container {
+            height: 230px;
+            overflow: hidden;
+        }
+
+        .card-img-top {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .card-product .text-muted {
+            color: #6f625d !important;
+        }
+
+        .price-tag {
+            color: var(--malva);
+            font-size: 1.15rem;
+            font-weight: 700;
+        }
+
+        .btn-outline-dark {
+            color: var(--chocolate);
+            border-color: var(--chocolate);
+        }
+
+        .btn-outline-dark:hover,
+        .btn-dark {
+            color: white;
+            background: var(--chocolate);
+            border-color: var(--chocolate);
+        }
+
+        .btn-dark:hover {
+            background: var(--malva);
+            border-color: var(--malva);
+        }
+
+        .modal-content {
+            border: 0;
+            border-radius: 18px;
+            overflow: hidden;
+        }
+
+        .modal-header {
+            background: var(--chocolate);
+            color: white;
+        }
+
+        .modal-title {
+            color: var(--rosa);
+        }
+
+        .modal-body {
+            color: var(--chocolate);
+        }
+
+        .contact-section {
+            padding: 50px 0;
+        }
+
+        .btn-whatsapp-float {
+            position: fixed;
+            bottom: 22px;
+            right: 22px;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            gap: 9px;
+            padding: 12px 22px;
+            background: var(--malva);
+            color: white;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            box-shadow: 0 4px 12px rgba(87, 54, 25, 0.25);
+        }
+
+        .btn-whatsapp-float:hover {
+            background: var(--chocolate);
+            color: white;
+        }
+
+        footer {
+            background: var(--chocolate);
+            color: white;
+        }
+
+        @media (max-width: 576px) {
+            .header-catalog {
+                padding: 40px 18px;
+            }
+
+            .header-catalog h1 {
+                font-size: 2rem;
+            }
+
+            .card-img-container {
+                height: 210px;
+            }
+
+            .btn-whatsapp-float {
+                right: 12px;
+                bottom: 12px;
+                padding: 10px 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- MENÚ -->
+<nav class="navbar navbar-expand">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <i class="fas fa-arrow-left me-2"></i>Volver al inicio
+        </a>
+        <span class="text-white fw-bold d-none d-sm-inline">
+            Pastelería Dora Batí
+        </span>
+    </div>
+</nav>
+
+<!-- ENCABEZADO -->
+<header class="header-catalog text-center">
+    <div class="container">
+        <h1 class="mb-3">Tortas</h1>
+        <p class="fs-5 mb-2">
+            Chocolate real y preparaciones artesanales para compartir momentos dulces
+        </p>
+        <p class="mb-0">
+            Elaboradas frescas a pedido en Recoleta, CABA.
+        </p>
+    </div>
+</header>
+
+<!-- ADAPTACIONES -->
+<section class="pt-4 pb-2">
+    <div class="container">
+        <div class="intro-note">
+            <h2 class="h5 mb-2">¿Buscás una versión diferente?</h2>
+            <p class="mb-0">
+                Según el producto, podemos ofrecer adaptaciones alimentarias.
+                Consultanos qué opciones podemos preparar para vos.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- CATÁLOGO -->
+<section class="py-5">
+    <div class="container">
+
+        <h2 class="h3 mb-4">Tortas y especialidades</h2>
+
+        <div class="row g-4">
+
+            <!-- TORTA PARA COMPARTIR -->
+            <div class="col-md-6 col-lg-4">
+                <article class="card card-product h-100">
+                    <div class="card-img-container">
+                        <img src="assets/img/premium/simple.jpeg"
+                             class="card-img-top"
+                             alt="Torta artesanal para compartir"
+                             loading="lazy">
+                    </div>
+                    <div class="card-body p-4 text-center d-flex flex-column">
+                        <h3 class="h5">Torta para Compartir</h3>
+                        <p class="text-muted small">
+                            Dos capas de bizcochuelo, una capa de relleno y cobertura a elección.
+                        </p>
+                        <p class="price-tag">$45.000</p>
+                        <button class="btn btn-outline-dark rounded-pill mt-auto"
+                                data-bs-toggle="modal"
+                                data-bs-target="#modalCompartir">
+                            Ver opciones
+                        </button>
+                    </div>
+                </article>
+            </div>
+
+            <!-- GRAN CELEBRACIÓN -->
+            <div class="col-md-6 col-lg-4">
+                <article class="card card-product h-100">
+                    <div class="card-img-container">
+                        <img src="assets/img/premium/doble.jpg"
+                             class="card-img-top"
+                             alt="Torta Gran Celebración"
+                             loading="lazy">
+                    </div>
+                    <div class="card-body p-4 text-center d-flex flex-column">
+                        <h3 class="h5">Gran Celebración</h3>
+                        <p class="text-muted small">
+                            Tres capas de bizcochuelo y dos capas de relleno para una torta más alta y abundante.
+                        </p>
+                        <p class="price-tag">$80.000</p>
+                        <button class="btn btn-outline-dark rounded-pill mt-auto"
+                                data-bs-toggle="modal"
+                                data-bs-target="#modalCelebracion">
+                            Ver opciones
+                        </button>
+                    </div>
+                </article>
+            </div>
+
+            <!-- MATILDA CLÁSICA -->
+            <div class="col-md-6 col-lg-4">
+                <article class="card card-product h-100">
+                    <div class="card-img-container">
+                        <img src="assets/img/premium/matilda.jpeg"
+                             class="card-img-top"
+                             alt="Torta Matilda clásica de chocolate"
+                             loading="lazy">
+                    </div>
+                    <div class="card-body p-4 text-center d-flex flex-column">
+                        <h3 class="h5">Matilda Clásica</h3>
+                        <p class="text-muted small">
+                            Bien chocolatoza, húmeda y con ganache intenso de chocolate.
+                        </p>
+                        <p class="price-tag mt-auto mb-0">
+                            $35.000
+                        </p>
+                        <p class="small text-muted mb-0">Para 2 a 4 personas</p>
+                    </div>
+                </article>
+            </div>
+
+            <!-- MATILDA CREMOSA -->
+            <div class="col-md-6 col-lg-4">
+                <article class="card card-product h-100">
+                    <div class="card-img-container">
+                        <img src="assets/img/premium/cremosa.jpeg"
+                             class="card-img-top"
+                             alt="Torta Matilda cremosa de chocolate"
+                             loading="lazy">
+                    </div>
+                    <div class="card-body p-4 text-center d-flex flex-column">
+                        <h3 class="h5">Matilda Cremosa</h3>
+                        <p class="text-muted small">
+                            Chocolate intenso con una capa generosa de relleno cremoso.
+                        </p>
+                        <p class="price-tag">$80.000</p>
+                        <p class="small text-muted mb-0">Para 8 a 10 personas</p>
+                    </div>
+                </article>
+            </div>
+
+            <!-- CHEESECAKE -->
+            <div class="col-md-6 col-lg-4">
+                <article class="card card-product h-100">
+                    <div class="card-img-container">
+                        <img src="assets/img/premium/cheescake.jpeg"
+                             class="card-img-top"
+                             alt="Cheesecake artesanal"
+                             loading="lazy">
+                    </div>
+                    <div class="card-body p-4 text-center d-flex flex-column">
+                        <h3 class="h5">Cheesecake</h3>
+                        <p class="text-muted small">
+                            Un clásico suave y cremoso para compartir.
+                        </p>
+                        <p class="price-tag mt-auto mb-0">$80.000</p>
+                    </div>
+                </article>
+            </div>
+
+            <!-- SELVA NEGRA -->
+            <div class="col-md-6 col-lg-4">
+                <article class="card card-product h-100">
+                    <div class="card-img-container">
+                        <img src="assets/img/premium/selva.JPG"
+                             class="card-img-top"
+                             alt="Torta Selva Negra"
+                             loading="lazy">
+                    </div>
+                    <div class="card-body p-4 text-center d-flex flex-column">
+                        <h3 class="h5">Selva Negra</h3>
+                        <p class="text-muted small">
+                            Chocolate, crema y el clásico sabor de la Selva Negra.
+                        </p>
+                        <p class="price-tag mt-auto mb-0">$80.000</p>
+                    </div>
+                </article>
+            </div>
+
+            <!-- SUEÑO DE COCO -->
+            <div class="col-md-6 col-lg-4">
+                <article class="card card-product h-100">
+                    <div class="card-img-container">
+                        <img src="assets/img/premium/sueno.jpeg"
+                             class="card-img-top"
+                             alt="Torta Sueño de Coco"
+                             loading="lazy">
+                    </div>
+                    <div class="card-body p-4 text-center d-flex flex-column">
+                        <h3 class="h5">Sueño de Coco</h3>
+                        <p class="text-muted small">
+                            Una combinación de chocolate y coco, suave y bien húmeda.
+                        </p>
+                        <p class="price-tag mt-auto mb-0">$80.000</p>
+                    </div>
+                </article>
+            </div>
+
+            <!-- CHOCOTORTA -->
+            <div class="col-md-6 col-lg-4">
+                <article class="card card-product h-100">
+                    <div class="card-img-container">
+                        <img src="assets/img/premium/chocotorta.jpeg"
+                             class="card-img-top"
+                             alt="Chocotorta artesanal"
+                             loading="lazy">
+                    </div>
+                    <div class="card-body p-4 text-center d-flex flex-column">
+                        <h3 class="h5">Chocotorta</h3>
+                        <p class="text-muted small">
+                            El clásico que nunca falla.
+                        </p>
+                        <p class="price-tag mt-auto mb-0">$80.000</p>
+                    </div>
+                </article>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- MODAL TORTA PARA COMPARTIR -->
+<div class="modal fade" id="modalCompartir" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title h5">Torta para Compartir</h2>
+                <button type="button" class="btn-close btn-close-white"
+                        data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+            <div class="modal-body">
+                <p>Una torta para compartir en una reunión familiar, una merienda o un festejo chico.</p>
+                <ul>
+                    <li><strong>Bizcochuelo:</strong> vainilla o chocolate.</li>
+                    <li><strong>Relleno:</strong> elegí uno.</li>
+                    <li><strong>Opciones:</strong> crema, dulce de leche, pastelera, ganache de chocolate, crema de limón o naranja.</li>
+                    <li><strong>Cobertura:</strong> buttercream, chocolate o crema.</li>
+                </ul>
+                <p class="small mb-0">
+                    Podés consultar por extras de fruta fresca o frutos secos.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- MODAL GRAN CELEBRACIÓN -->
+<div class="modal fade" id="modalCelebracion" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title h5">Gran Celebración</h2>
+                <button type="button" class="btn-close btn-close-white"
+                        data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+            <div class="modal-body">
+                <p>Una torta más alta y abundante, pensada para cuando querés una presencia especial en la mesa.</p>
+                <ul>
+                    <li><strong>Bizcochuelo:</strong> vainilla o chocolate.</li>
+                    <li><strong>Rellenos:</strong> elegí hasta dos.</li>
+                    <li><strong>Opciones:</strong> crema, dulce de leche, pastelera, ganache de chocolate, crema de limón o naranja.</li>
+                    <li><strong>Cobertura:</strong> buttercream, chocolate o crema.</li>
+                </ul>
+                <p class="small mb-0">
+                    Consultá por extras de fruta fresca o frutos secos.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- CONTACTO -->
+<section class="contact-section">
+    <div class="container text-center">
+        <h2 class="h4 mb-3">¿Buscás otra cosa?</h2>
+        <p class="text-muted mb-4">
+            Contame qué necesitás y para qué fecha. Vemos juntos las opciones.
+        </p>
+        <a class="btn btn-dark rounded-pill px-4"
+           href="https://wa.me/5491123843612?text=Hola%2C%20quisiera%20consultar%20por%20una%20torta"
+           target="_blank" rel="noopener">
+            Consultar por WhatsApp
+        </a>
+    </div>
+</section>
+
+<!-- WHATSAPP FLOTANTE -->
+<a class="btn-whatsapp-float"
+   href="https://wa.me/5491123843612?text=Hola%2C%20quisiera%20consultar%20por%20una%20torta"
+   target="_blank" rel="noopener"
+   aria-label="Consultar por WhatsApp">
+    <i class="fab fa-whatsapp fs-4"></i>
+    <span>Consultar</span>
+</a>
+
+<!-- PIE DE PÁGINA -->
+<footer class="text-center py-4">
+    <p class="mb-1">Dora Batí · Pastelería artesanal</p>
+    <p class="mb-0 small">Producción en Recoleta, CABA. Retiros y envíos.</p>
+    <p class="mb-0 small mt-2">© 2026 Dora Batí. Todos los derechos reservados.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
