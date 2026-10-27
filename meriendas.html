@@ -1,0 +1,519 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Desayunos y Meriendas Artesanales en Recoleta | Dora Batí</title>
+    <meta name="description" content="Pan de harina de almendras, budines, tartas dulces, brownies, cuadrados, galletitas y scones artesanales. Elaborados a pedido en Recoleta, CABA.">
+    <link rel="canonical" href="https://dorabati.com.ar/meriendas.html">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Desayunos y Meriendas | Dora Batí">
+    <meta property="og:description" content="Sabores caseros y preparaciones artesanales para disfrutar cada día.">
+    <meta property="og:url" content="https://dorabati.com.ar/meriendas.html">
+    <meta property="og:locale" content="es_AR">
+
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&family=Roboto+Slab:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y6DNZGLE23"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-Y6DNZGLE23');
+    </script>
+
+    <style>
+        :root {
+            --rosa-nube: #FBF1F5;
+            --rosa: #E4BACD;
+            --chocolate: #573619;
+            --malva: #8A5A77;
+        }
+
+        body {
+            font-family: 'Jost', sans-serif;
+            background-color: var(--rosa-nube);
+            color: var(--chocolate);
+        }
+
+        h1, h2, h3, h4, h5 {
+            font-family: 'Roboto Slab', serif;
+            font-weight: 700;
+            color: var(--chocolate);
+        }
+
+        .navbar {
+            background-color: var(--chocolate);
+            padding: 14px 0;
+        }
+
+        .navbar-brand {
+            color: #fff;
+            font-weight: 600;
+        }
+
+        .navbar-brand:hover {
+            color: var(--rosa);
+        }
+
+        .header-catalog {
+            background-color: var(--chocolate);
+            color: #fff;
+            padding: 55px 0 45px;
+        }
+
+        .header-catalog h1 {
+            color: var(--rosa);
+        }
+
+        .header-catalog p {
+            max-width: 760px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .intro-note {
+            background-color: var(--rosa);
+            border-radius: 18px;
+            padding: 22px 26px;
+        }
+
+        .card-product {
+            border: 1px solid rgba(87, 54, 25, 0.10);
+            border-radius: 18px;
+            overflow: hidden;
+            background: rgba(255, 255, 255, 0.65);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .card-product:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 24px rgba(87, 54, 25, 0.12);
+        }
+
+        .card-img-container {
+            height: 220px;
+            overflow: hidden;
+        }
+
+        .card-img-top {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .card-product .text-muted {
+            color: #6f625d !important;
+        }
+
+        .price-tag {
+            font-size: 1.15rem;
+            color: var(--malva);
+            font-weight: 700;
+        }
+
+        .btn-outline-dark {
+            color: var(--chocolate);
+            border-color: var(--chocolate);
+        }
+
+        .btn-outline-dark:hover,
+        .btn-dark {
+            color: #fff;
+            background-color: var(--chocolate);
+            border-color: var(--chocolate);
+        }
+
+        .btn-dark:hover {
+            background-color: var(--malva);
+            border-color: var(--malva);
+        }
+
+        .modal-content {
+            border: none;
+            border-radius: 18px;
+            overflow: hidden;
+        }
+
+        .modal-header {
+            background-color: var(--chocolate);
+            color: #fff;
+        }
+
+        .modal-title {
+            color: var(--rosa);
+        }
+
+        .contact-section {
+            padding: 50px 0;
+        }
+
+        .btn-whatsapp-float {
+            position: fixed;
+            bottom: 22px;
+            right: 22px;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            gap: 9px;
+            padding: 12px 22px;
+            background-color: var(--malva);
+            color: #fff;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            box-shadow: 0 4px 12px rgba(87, 54, 25, 0.25);
+        }
+
+        .btn-whatsapp-float:hover {
+            background-color: var(--chocolate);
+            color: #fff;
+        }
+
+        footer {
+            background-color: var(--chocolate);
+            color: #fff;
+        }
+
+        @media (max-width: 576px) {
+            .header-catalog {
+                padding: 40px 18px;
+            }
+
+            .header-catalog h1 {
+                font-size: 2rem;
+            }
+
+            .card-img-container {
+                height: 200px;
+            }
+
+            .btn-whatsapp-float {
+                right: 12px;
+                bottom: 12px;
+                padding: 10px 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- MENÚ -->
+<nav class="navbar navbar-expand">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <i class="fas fa-arrow-left me-2"></i>Volver al inicio
+        </a>
+        <span class="text-white fw-bold d-none d-sm-inline">
+            Pastelería Dora Batí
+        </span>
+    </div>
+</nav>
+
+<!-- ENCABEZADO -->
+<header class="header-catalog text-center">
+    <div class="container">
+        <h1 class="mb-3">Desayunos y meriendas</h1>
+        <p class="fs-5 mb-2">
+            Sabores caseros y preparaciones artesanales para disfrutar cada día.
+        </p>
+        <p class="mb-0">
+            Elaboramos cada pedido fresco y a pedido en Recoleta, CABA.
+        </p>
+    </div>
+</header>
+
+<!-- INTRO -->
+<section class="pt-4 pb-2">
+    <div class="container">
+        <div class="intro-note">
+            <h2 class="h5 mb-2">Algo rico para cada momento</h2>
+            <p class="mb-0">
+                Desde un pan para el desayuno hasta algo dulce para acompañar
+                el mate. Consultanos por las versiones disponibles y las
+                adaptaciones que podemos hacer según cada producto.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- CATÁLOGO -->
+<section class="py-5">
+    <div class="container">
+        <div class="row g-4">
+
+            <!-- PAN DE ALMENDRAS -->
+            <div class="col-md-6 col-lg-4">
+                <article class="card card-product h-100">
+                    <div class="card-img-container">
+                        <img src="assets/img/keto/pan.jpeg"
+                             class="card-img-top"
+                             alt="Pan de harina de almendras"
+                             loading="lazy">
+                    </div>
+                    <div class="card-body p-4 text-center d-flex flex-column">
+                        <h2 class="h5">Pan de Harina de Almendras</h2>
+                        <p class="text-muted small">
+                            Un pan sabroso y versátil para tus desayunos
+                            y meriendas.
+                        </p>
+                        <p class="price-tag mb-1">$32.000</p>
+                        <p class="small text-muted">Aproximadamente 1 kg</p>
+                        <p class="fw-semibold">Oferta: 2 por $60.000</p>
+                        <a class="btn btn-outline-dark rounded-pill mt-auto"
+                           href="https://wa.me/5491123843612?text=Hola%2C%20quisiera%20consultar%20por%20el%20pan%20de%20harina%20de%20almendras"
+                           target="_blank" rel="noopener">
+                            Consultar
+                        </a>
+                    </div>
+                </article>
+            </div>
+
+            <!-- TARTAS DULCES -->
+            <div class="col-md-6 col-lg-4">
+                <article class="card card-product h-100">
+                    <div class="card-img-container">
+                        <img src="assets/img/premium/frutilla.jpeg"
+                             class="card-img-top"
+                             alt="Tartas dulces artesanales"
+                             loading="lazy">
+                    </div>
+                    <div class="card-body p-4 text-center d-flex flex-column">
+                        <h2 class="h5">Tartas Dulces</h2>
+                        <p class="text-muted small">
+                            Opciones clásicas para compartir en familia
+                            o disfrutar en la merienda.
+                        </p>
+                        <p class="price-tag mb-2">Desde $48.000</p>
+                        <button class="btn btn-outline-dark rounded-pill mt-auto"
+                                data-bs-toggle="modal"
+                                data-bs-target="#modalTartas">
+                            Ver variedades
+                        </button>
+                    </div>
+                </article>
+            </div>
+
+            <!-- BUDINES -->
+            <div class="col-md-6 col-lg-4">
+                <article class="card card-product h-100">
+                    <div class="card-img-container">
+                        <img src="assets/img/premium/budin.jpg"
+                             class="card-img-top"
+                             alt="Budines artesanales"
+                             loading="lazy">
+                    </div>
+                    <div class="card-body p-4 text-center d-flex flex-column">
+                        <h2 class="h5">Budines Artesanales</h2>
+                        <p class="text-muted small">
+                            Sabores caseros para acompañar el desayuno,
+                            la merienda o el mate.
+                        </p>
+                        <p class="price-tag mb-2">Desde $14.000</p>
+                        <button class="btn btn-outline-dark rounded-pill mt-auto"
+                                data-bs-toggle="modal"
+                                data-bs-target="#modalBudines">
+                            Ver sabores y tamaños
+                        </button>
+                    </div>
+                </article>
+            </div>
+
+            <!-- BROWNIES -->
+            <div class="col-md-6 col-lg-4">
+                <article class="card card-product h-100">
+                    <div class="card-img-container">
+                        <img src="assets/img/premium/brownie.jpg"
+                             class="card-img-top"
+                             alt="Brownies de chocolate"
+                             loading="lazy">
+                    </div>
+                    <div class="card-body p-4 text-center d-flex flex-column">
+                        <h2 class="h5">Brownies</h2>
+                        <p class="text-muted small">
+                            Intensos y húmedos, ideales para darse un gusto
+                            o compartir.
+                        </p>
+                        <p class="price-tag mb-2">$6.000 c/u</p>
+                        <a class="btn btn-outline-dark rounded-pill mt-auto"
+                           href="https://wa.me/5491123843612?text=Hola%2C%20quisiera%20consultar%20por%20los%20brownies"
+                           target="_blank" rel="noopener">
+                            Consultar
+                        </a>
+                    </div>
+                </article>
+            </div>
+
+            <!-- CUADRADOS, GALLETITAS Y SCONES -->
+            <div class="col-md-6 col-lg-4">
+                <article class="card card-product h-100">
+                    <div class="card-body p-4 text-center d-flex flex-column justify-content-center">
+                        <div class="mb-3">
+                            <i class="fas fa-cookie-bite fa-3x"
+                               style="color: var(--malva);"></i>
+                        </div>
+                        <h2 class="h5">Cuadrados dulces, galletitas y scones</h2>
+                        <p class="text-muted small">
+                            Brownies, cuadrados de ricota, coco con dulce de leche,
+                            pasta frola, galletitas y scones.
+                        </p>
+                        <button class="btn btn-outline-dark rounded-pill mt-auto"
+                                data-bs-toggle="modal"
+                                data-bs-target="#modalAntojos">
+                            Ver opciones y precios
+                        </button>
+                    </div>
+                </article>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- MODAL TARTAS -->
+<div class="modal fade" id="modalTartas" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title h5">Tartas dulces</h2>
+                <button type="button" class="btn-close btn-close-white"
+                        data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+            <div class="modal-body">
+                <p class="mb-3">
+                    Tartas para compartir, con distintas variedades:
+                </p>
+                <ul>
+                    <li><strong>Tarta dulce común:</strong> ricota o frutilla — $48.000.</li>
+                    <li><strong>Tarta dulce especial:</strong> dulce de leche y coco o pasta frola — $55.000.</li>
+                </ul>
+                <p class="small text-muted mb-0">
+                    Precios para tartas de aproximadamente 8 a 10 porciones.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- MODAL BUDINES -->
+<div class="modal fade" id="modalBudines" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title h5">Budines artesanales</h2>
+                <button type="button" class="btn-close btn-close-white"
+                        data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+            <div class="modal-body">
+                <h3 class="h6">Budines comunes</h3>
+                <p>
+                    Vainilla, limón, naranja, manzana, coco y algarroba.
+                </p>
+                <ul>
+                    <li>Pequeño, aproximadamente 350 g: <strong>$14.000</strong>.</li>
+                    <li>Grande, aproximadamente 700 g: <strong>$26.000</strong>.</li>
+                </ul>
+
+                <hr>
+
+                <h3 class="h6">Budines especiales</h3>
+                <p>Vainilla con frutos secos, chocolate y carrot.</p>
+                <ul>
+                    <li>Pequeño, aproximadamente 350 g: <strong>$24.000</strong>.</li>
+                    <li>Grande, aproximadamente 700 g: <strong>$38.000</strong>.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- MODAL ANTOJOS -->
+<div class="modal fade" id="modalAntojos" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title h5">Cuadrados dulces, galletitas y scones</h2>
+                <button type="button" class="btn-close btn-close-white"
+                        data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+            <div class="modal-body">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item d-flex justify-content-between gap-3">
+                        <span>Brownies</span>
+                        <strong>$6.000 c/u</strong>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between gap-3">
+                        <span>Cuadrado de ricota</span>
+                        <strong>$15.000 c/u</strong>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between gap-3">
+                        <span>Cuadrado de coco y dulce de leche</span>
+                        <strong>$20.000 c/u</strong>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between gap-3">
+                        <span>Pasta frola</span>
+                        <strong>$15.000 c/u</strong>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between gap-3">
+                        <span>Galletitas</span>
+                        <strong>$15.000 el ¼ kg</strong>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between gap-3">
+                        <span>Scones</span>
+                        <strong>$15.000 el ¼ kg</strong>
+                    </li>
+                </ul>
+                <p class="small text-muted mt-3 mb-0">
+                    Consultá disponibilidad y versiones según el producto.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- CONTACTO -->
+<section class="contact-section">
+    <div class="container text-center">
+        <h2 class="h4 mb-3">¿Qué te gustaría disfrutar?</h2>
+        <p class="text-muted mb-4">
+            Escribime y contame qué necesitás y para qué fecha.
+        </p>
+        <a class="btn btn-dark rounded-pill px-4"
+           href="https://wa.me/5491123843612?text=Hola%2C%20quisiera%20consultar%20por%20meriendas%20y%20desayunos"
+           target="_blank" rel="noopener">
+            Consultar por WhatsApp
+        </a>
+    </div>
+</section>
+
+<!-- WHATSAPP FLOTANTE -->
+<a class="btn-whatsapp-float"
+   href="https://wa.me/5491123843612?text=Hola%2C%20quisiera%20consultar%20por%20meriendas%20y%20desayunos"
+   target="_blank" rel="noopener"
+   aria-label="Consultar por WhatsApp">
+    <i class="fab fa-whatsapp fs-4"></i>
+    <span>Consultar</span>
+</a>
+
+<!-- PIE -->
+<footer class="text-center py-4">
+    <p class="mb-1">Dora Batí · Pastelería artesanal</p>
+    <p class="mb-0 small">Producción en Recoleta, CABA. Retiros y envíos.</p>
+    <p class="mb-0 small mt-2">© 2026 Dora Batí. Todos los derechos reservados.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
