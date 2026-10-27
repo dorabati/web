@@ -1,0 +1,400 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Salado y Viandas en Recoleta | Dora Batí</title>
+  <meta name="description" content="Tartas saladas con harina de almendras, prepizzas y viandas caseras personalizadas. Elaboración a pedido en Recoleta, CABA.">
+  <link rel="canonical" href="https://dorabati.com.ar/salados.html">
+  <meta property="og:title" content="Salado y Viandas | Dora Batí">
+  <meta property="og:description" content="Opciones caseras, elaboradas a pedido y adaptadas a lo que necesitás.">
+  <meta property="og:url" content="https://dorabati.com.ar/salados.html">
+  <meta property="og:type" content="website">
+
+  <link rel="icon" href="assets/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&family=Roboto+Slab:wght@500;600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y6DNZGLE23"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-Y6DNZGLE23');
+  </script>
+
+  <style>
+    :root {
+      --rosa-nube: #FBF1F5;
+      --rosa: #E4BACD;
+      --chocolate: #573619;
+      --malva: #8A5A77;
+      --texto: #4B403B;
+    }
+
+    body {
+      font-family: 'Jost', sans-serif;
+      color: var(--texto);
+      background: #fff;
+    }
+
+    h1, h2, h3, h4 {
+      font-family: 'Roboto Slab', serif;
+      color: var(--chocolate);
+    }
+
+    .navbar {
+      background: var(--rosa-nube);
+    }
+
+    .navbar-brand {
+      color: var(--chocolate);
+      font-family: 'Roboto Slab', serif;
+      font-weight: 600;
+    }
+
+    .nav-link {
+      color: var(--chocolate);
+    }
+
+    .hero {
+      background: var(--rosa-nube);
+      padding: 65px 0 55px;
+      text-align: center;
+    }
+
+    .hero p {
+      max-width: 650px;
+      margin: 18px auto 0;
+      font-size: 1.1rem;
+    }
+
+    .section-title {
+      margin-bottom: 12px;
+    }
+
+    .product-card {
+      border: 1px solid #f0e6e9;
+      border-radius: 18px;
+      overflow: hidden;
+      height: 100%;
+      transition: transform .2s ease, box-shadow .2s ease;
+    }
+
+    .product-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 24px rgba(87, 54, 25, .10);
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 245px;
+      object-fit: cover;
+    }
+
+    .product-card .card-body {
+      padding: 24px;
+    }
+
+    .price {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--chocolate);
+    }
+
+    .tag {
+      display: inline-block;
+      border-radius: 20px;
+      background: var(--rosa-nube);
+      color: var(--malva);
+      padding: 5px 12px;
+      font-size: .85rem;
+      margin-bottom: 12px;
+    }
+
+    .btn-dora {
+      background: var(--chocolate);
+      color: white;
+      border-radius: 30px;
+      padding: 10px 22px;
+      border: 1px solid var(--chocolate);
+    }
+
+    .btn-dora:hover {
+      background: var(--malva);
+      border-color: var(--malva);
+      color: white;
+    }
+
+    .btn-outline-dora {
+      border: 1px solid var(--chocolate);
+      color: var(--chocolate);
+      border-radius: 30px;
+      padding: 9px 20px;
+    }
+
+    .btn-outline-dora:hover {
+      background: var(--chocolate);
+      color: white;
+    }
+
+    .custom-box {
+      background: var(--rosa-nube);
+      border-radius: 18px;
+      padding: 30px;
+    }
+
+    footer {
+      background: var(--chocolate);
+      color: white;
+    }
+
+    .whatsapp-float {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      z-index: 1000;
+      background: #25D366;
+      color: white;
+      border-radius: 50px;
+      padding: 13px 18px;
+      text-decoration: none;
+      box-shadow: 0 3px 12px rgba(0,0,0,.18);
+      font-weight: 600;
+    }
+
+    .whatsapp-float:hover {
+      background: #1eae54;
+      color: white;
+    }
+
+    @media (max-width: 576px) {
+      .hero {
+        padding: 45px 18px;
+      }
+      .product-card img {
+        height: 220px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navegación -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Dora Batí</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="menuPrincipal">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="tortas.html">Tortas</a></li>
+          <li class="nav-item"><a class="nav-link" href="meriendas.html">Desayunos y meriendas</a></li>
+          <li class="nav-item"><a class="nav-link active" href="salados.html">Salado y viandas</a></li>
+          <li class="nav-item"><a class="nav-link" href="postres.html">Postres individuales</a></li>
+          <li class="nav-item"><a class="nav-link" href="cumples.html">Cumples</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Presentación -->
+  <header class="hero">
+    <div class="container">
+      <h1>Salado y viandas</h1>
+      <p>Opciones caseras para resolver tus comidas de todos los días, con preparaciones hechas a pedido y a tu medida.</p>
+    </div>
+  </header>
+
+  <main class="container py-5">
+
+    <!-- Tartas y prepizzas -->
+    <section class="mb-5">
+      <h2 class="section-title">Tartas saladas y prepizzas</h2>
+      <p class="text-muted mb-4">Preparaciones con base de harina de almendras, elaboradas artesanalmente.</p>
+
+      <div class="row g-4">
+
+        <!-- Tartas saladas -->
+        <div class="col-md-6 col-lg-4">
+          <article class="card product-card shadow-sm">
+            <img src="assets/img/keto/tarta.jpeg" alt="Tartas saladas con base de harina de almendras" loading="lazy">
+            <div class="card-body text-center d-flex flex-column">
+              <span class="tag align-self-center">Harina de almendras</span>
+              <h3 class="h5">Tartas saladas</h3>
+              <p class="text-muted">Masa artesanal con diferentes rellenos para compartir o disfrutar en una comida.</p>
+              <p class="price mb-3">Desde $40.000</p>
+              <button class="btn btn-outline-dora mt-auto" data-bs-toggle="modal" data-bs-target="#modalTartas">
+                Ver variedades y precios
+              </button>
+            </div>
+          </article>
+        </div>
+
+        <!-- Prepizzas -->
+        <div class="col-md-6 col-lg-4">
+          <article class="card product-card shadow-sm">
+            <img src="assets/img/keto/pizza.jpeg" alt="Prepizzas con base de harina de almendras" loading="lazy">
+            <div class="card-body text-center d-flex flex-column">
+              <span class="tag align-self-center">Harina de almendras</span>
+              <h3 class="h5">Prepizzas</h3>
+              <p class="text-muted">Una opción práctica para tener lista y completar con los ingredientes que más te gusten.</p>
+              <p class="price mb-3">$14.000 la unidad</p>
+              <button class="btn btn-outline-dora mt-auto" data-bs-toggle="modal" data-bs-target="#modalPrepizzas">
+                Ver opciones y precios
+              </button>
+            </div>
+          </article>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Viandas -->
+    <section class="mb-5">
+      <h2 class="section-title">Viandas individuales</h2>
+      <p class="text-muted mb-4">Vos elegís, yo cocino. Preparaciones caseras con ingredientes, condimentos y tamaño adaptables según lo que necesitás.</p>
+
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <article class="card product-card shadow-sm">
+            <img src="assets/img/keto/vianda2.jpeg" alt="Viandas caseras individuales" loading="lazy">
+            <div class="card-body text-center d-flex flex-column">
+              <span class="tag align-self-center">Menú personalizado</span>
+              <h3 class="h5">Viandas a tu medida</h3>
+              <p class="text-muted">Elegí tus preparaciones y el tamaño de cada porción. Se entregan listas para calentar y comer.</p>
+              <p class="price mb-3">Desde $9.600</p>
+              <button class="btn btn-outline-dora mt-auto" data-bs-toggle="modal" data-bs-target="#modalViandas">
+                Ver tamaños y precios
+              </button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section class="mb-4">
+      <div class="custom-box text-center">
+        <h2 class="h4 mb-3">¿Querés armar tu pedido?</h2>
+        <p class="mb-4">Contame qué necesitás y para qué fecha. Lo conversamos y vemos las opciones disponibles.</p>
+        <a class="btn btn-dora" href="https://wa.me/5491123843612?text=Hola%2C%20quiero%20consultar%20por%20salados%20y%20viandas" target="_blank" rel="noopener">
+          Consultar por WhatsApp
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Modal: Tartas -->
+  <div class="modal fade" id="modalTartas" tabindex="-1" aria-labelledby="modalTartasLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title fs-5" id="modalTartasLabel">Tartas saladas</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+          <p>Elaboradas con masa de harina de almendras.</p>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item d-flex justify-content-between gap-3">
+              <span>Tarta de verdura</span><strong>$40.000</strong>
+            </li>
+            <li class="list-group-item d-flex justify-content-between gap-3">
+              <span>Tarta de pollo o jamón y queso</span><strong>$55.000</strong>
+            </li>
+            <li class="list-group-item d-flex justify-content-between gap-3">
+              <span>Tarta individual</span><strong>$20.000</strong>
+            </li>
+          </ul>
+          <p class="small text-muted mt-3 mb-0">Consultame por disponibilidad y opciones de relleno.</p>
+        </div>
+        <div class="modal-footer">
+          <a class="btn btn-dora" href="https://wa.me/5491123843612?text=Hola%2C%20quiero%20consultar%20por%20las%20tartas%20saladas" target="_blank" rel="noopener">Consultar por WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal: Prepizzas -->
+  <div class="modal fade" id="modalPrepizzas" tabindex="-1" aria-labelledby="modalPrepizzasLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title fs-5" id="modalPrepizzasLabel">Prepizzas</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+          <p>Con base de harina de almendras.</p>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item d-flex justify-content-between gap-3">
+              <span>Unidad</span><strong>$14.000</strong>
+            </li>
+            <li class="list-group-item d-flex justify-content-between gap-3">
+              <span>Pack x 3</span><strong>$36.000</strong>
+            </li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <a class="btn btn-dora" href="https://wa.me/5491123843612?text=Hola%2C%20quiero%20consultar%20por%20las%20prepizzas" target="_blank" rel="noopener">Consultar por WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal: Viandas -->
+  <div class="modal fade" id="modalViandas" tabindex="-1" aria-labelledby="modalViandasLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title fs-5" id="modalViandasLabel">Viandas individuales</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+          <p>Vos elegís, yo cocino. Podés consultar para adaptar ingredientes, condimentos y tamaño.</p>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item d-flex justify-content-between gap-3">
+              <span>200 g</span><strong>$9.600</strong>
+            </li>
+            <li class="list-group-item d-flex justify-content-between gap-3">
+              <span>300 g</span><strong>$11.000</strong>
+            </li>
+            <li class="list-group-item d-flex justify-content-between gap-3">
+              <span>400 g</span><strong>$13.600</strong>
+            </li>
+          </ul>
+          <div class="alert mt-3 mb-0" style="background:var(--rosa-nube); color:var(--chocolate);">
+            <strong>10 o más viandas: 10% de descuento.</strong>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <a class="btn btn-dora" href="https://wa.me/5491123843612?text=Hola%2C%20quiero%20consultar%20por%20las%20viandas" target="_blank" rel="noopener">Consultar por WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="text-center py-4">
+    <div class="container">
+      <p class="mb-1">Dora Batí · Pastelería artesanal</p>
+      <p class="small mb-1">Producción a pedido en Recoleta, CABA.</p>
+      <p class="small mb-0">Retiros y envíos coordinados. © 2026 Dora Batí.</p>
+    </div>
+  </footer>
+
+  <a class="whatsapp-float" href="https://wa.me/5491123843612?text=Hola%2C%20quiero%20consultar%20por%20salados%20y%20viandas" target="_blank" rel="noopener" aria-label="Consultar por WhatsApp">
+    WhatsApp
+  </a>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
