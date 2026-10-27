@@ -331,55 +331,98 @@
             </div>
 
             <!-- BROWNIES -->
-            <div class="col-md-6 col-lg-4">
-                <article class="card card-product h-100">
-                    <div class="card-img-container">
-                        <img src="assets/img/premium/brownie.jpg"
-                             class="card-img-top"
-                             alt="Brownies de chocolate"
-                             loading="lazy">
-                    </div>
-                    <div class="card-body p-4 text-center d-flex flex-column">
-                        <h2 class="h5">Brownies</h2>
-                        <p class="text-muted small">
-                            Intensos y húmedos, ideales para darse un gusto
-                            o compartir.
-                        </p>
-                        <p class="price-tag mb-2">$6.000 c/u</p>
-                        <a class="btn btn-outline-dark rounded-pill mt-auto"
-                           href="https://wa.me/5491123843612?text=Hola%2C%20quisiera%20consultar%20por%20los%20brownies"
-                           target="_blank" rel="noopener">
-                            Consultar
-                        </a>
-                    </div>
-                </article>
-            </div>
+
+<!-- BROWNIES -->
+<div class="col-md-6 col-lg-4">
+    <article class="card card-product h-100">
+        <div class="card-img-container">
+            <img src="assets/img/premium/brownie.jpg"
+                 class="card-img-top"
+                 alt="Brownies artesanales de chocolate"
+                 loading="lazy">
+        </div>
+        <div class="card-body p-4 text-center d-flex flex-column">
+            <h2 class="h5">Brownies</h2>
+            <p class="text-muted small">
+                Intensos y húmedos, con todo el sabor del chocolate.
+            </p>
+            <p class="price-tag mb-1">$6.000 c/u</p>
+            <p class="fw-semibold mb-3">Caja de 12 unidades: $60.000</p>
+            <button class="btn btn-outline-dark rounded-pill mt-auto"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modalBrownies">
+                Ver opciones
+            </button>
+        </div>
+    </article>
+</div>
 
             <!-- CUADRADOS, GALLETITAS Y SCONES -->
-            <div class="col-md-6 col-lg-4">
-                <article class="card card-product h-100">
-                    <div class="card-body p-4 text-center d-flex flex-column justify-content-center">
-                        <div class="mb-3">
-                            <i class="fas fa-cookie-bite fa-3x"
-                               style="color: var(--malva);"></i>
-                        </div>
-                        <h2 class="h5">Cuadrados dulces, galletitas y scones</h2>
-                        <p class="text-muted small">
-                            Brownies, cuadrados de ricota, coco con dulce de leche,
-                            pasta frola, galletitas y scones.
-                        </p>
-                        <button class="btn btn-outline-dark rounded-pill mt-auto"
-                                data-bs-toggle="modal"
-                                data-bs-target="#modalAntojos">
-                            Ver opciones y precios
-                        </button>
-                    </div>
-                </article>
-            </div>
 
+<!-- CUADRADOS DULCES -->
+<div class="col-md-6 col-lg-4">
+    <article class="card card-product h-100">
+        <div class="card-body p-4 text-center d-flex flex-column justify-content-center">
+            <div class="mb-3">
+                <i class="fas fa-cookie-bite fa-3x"
+                   style="color: var(--malva);"></i>
+            </div>
+            <h2 class="h5">Cuadrados dulces</h2>
+            <p class="text-muted small">
+                Porciones de 9 × 9 cm. Elegí tu variedad favorita.
+            </p>
+            <button class="btn btn-outline-dark rounded-pill mt-auto"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modalCuadrados">
+                Ver variedades y precios
+            </button>
         </div>
-    </div>
-</section>
+    </article>
+</div>
+
+<!-- GALLETITAS -->
+<div class="col-md-6 col-lg-4">
+    <article class="card card-product h-100">
+        <div class="card-body p-4 text-center d-flex flex-column justify-content-center">
+            <div class="mb-3">
+                <i class="fas fa-cookie fa-3x"
+                   style="color: var(--malva);"></i>
+            </div>
+            <h2 class="h5">Galletitas artesanales</h2>
+            <p class="text-muted small">
+                Para acompañar el mate, el café o disfrutar algo rico.
+            </p>
+            <p class="price-tag mb-3">$15.000 el ¼ kg</p>
+            <button class="btn btn-outline-dark rounded-pill mt-auto"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modalGalletitas">
+                Consultar variedades
+            </button>
+        </div>
+    </article>
+</div>
+
+<!-- SCONES -->
+<div class="col-md-6 col-lg-4">
+    <article class="card card-product h-100">
+        <div class="card-body p-4 text-center d-flex flex-column justify-content-center">
+            <div class="mb-3">
+                <i class="fas fa-bread-slice fa-3x"
+                   style="color: var(--malva);"></i>
+            </div>
+            <h2 class="h5">Scones</h2>
+            <p class="text-muted small">
+                Una opción artesanal para desayunos y meriendas.
+            </p>
+            <p class="price-tag mb-3">$15.000 el ¼ kg</p>
+            <button class="btn btn-outline-dark rounded-pill mt-auto"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modalScones">
+                Consultar
+            </button>
+        </div>
+    </article>
+</div>
 
 <!-- MODAL TARTAS -->
 <div class="modal fade" id="modalTartas" tabindex="-1" aria-hidden="true">
@@ -438,45 +481,129 @@
     </div>
 </div>
 
-<!-- MODAL ANTOJOS -->
-<div class="modal fade" id="modalAntojos" tabindex="-1" aria-hidden="true">
+<!-- MODALES -->
+
+<!-- MODAL BROWNIES -->
+<div class="modal fade" id="modalBrownies" tabindex="-1"
+     aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
             <div class="modal-header">
-                <h2 class="modal-title h5">Cuadrados dulces, galletitas y scones</h2>
+                <h2 class="modal-title h5">Brownies artesanales</h2>
                 <button type="button" class="btn-close btn-close-white"
                         data-bs-dismiss="modal" aria-label="Cerrar"></button>
             </div>
             <div class="modal-body">
-                <ul class="list-group list-group-flush">
+                <p>Brownies intensos y húmedos, con sabor a chocolate.</p>
+                <ul class="list-group list-group-flush mb-3">
                     <li class="list-group-item d-flex justify-content-between gap-3">
-                        <span>Brownies</span>
-                        <strong>$6.000 c/u</strong>
+                        <span>Por unidad</span>
+                        <strong>$6.000</strong>
                     </li>
                     <li class="list-group-item d-flex justify-content-between gap-3">
-                        <span>Cuadrado de ricota</span>
-                        <strong>$15.000 c/u</strong>
-                    </li>
-                    <li class="list-group-item d-flex justify-content-between gap-3">
-                        <span>Cuadrado de coco y dulce de leche</span>
-                        <strong>$20.000 c/u</strong>
-                    </li>
-                    <li class="list-group-item d-flex justify-content-between gap-3">
-                        <span>Pasta frola</span>
-                        <strong>$15.000 c/u</strong>
-                    </li>
-                    <li class="list-group-item d-flex justify-content-between gap-3">
-                        <span>Galletitas</span>
-                        <strong>$15.000 el ¼ kg</strong>
-                    </li>
-                    <li class="list-group-item d-flex justify-content-between gap-3">
-                        <span>Scones</span>
-                        <strong>$15.000 el ¼ kg</strong>
+                        <span>Caja de 12 unidades</span>
+                        <strong>$60.000</strong>
                     </li>
                 </ul>
-                <p class="small text-muted mt-3 mb-0">
-                    Consultá disponibilidad y versiones según el producto.
+                <a class="btn btn-dark rounded-pill w-100"
+                   href="https://wa.me/5491123843612?text=Hola%2C%20quisiera%20consultar%20por%20los%20brownies"
+                   target="_blank" rel="noopener">
+                    Consultar por WhatsApp
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- MODAL CUADRADOS DULCES -->
+<div class="modal fade" id="modalCuadrados" tabindex="-1"
+     aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title h5">Cuadrados dulces</h2>
+                <button type="button" class="btn-close btn-close-white"
+                        data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+            <div class="modal-body">
+                <p class="text-muted">
+                    Porciones de 9 × 9 cm.
                 </p>
+                <ul class="list-group list-group-flush mb-3">
+                    <li class="list-group-item d-flex justify-content-between gap-3">
+                        <span>Cuadrado de ricota</span>
+                        <strong>$15.000</strong>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between gap-3">
+                        <span>Frola de pera</span>
+                        <strong>$15.000</strong>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between gap-3">
+                        <span>Coco con dulce de leche</span>
+                        <strong>$20.000</strong>
+                    </li>
+                </ul>
+                <a class="btn btn-dark rounded-pill w-100"
+                   href="https://wa.me/5491123843612?text=Hola%2C%20quisiera%20consultar%20por%20los%20cuadrados%20dulces"
+                   target="_blank" rel="noopener">
+                    Consultar por WhatsApp
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- MODAL GALLETITAS -->
+<div class="modal fade" id="modalGalletitas" tabindex="-1"
+     aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title h5">Galletitas artesanales</h2>
+                <button type="button" class="btn-close btn-close-white"
+                        data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+            <div class="modal-body">
+                <p class="mb-2">
+                    Galletitas para disfrutar en cualquier momento del día.
+                </p>
+                <p class="price-tag">$15.000 el ¼ kg</p>
+                <p class="small text-muted">
+                    Consultá por las variedades disponibles.
+                </p>
+                <a class="btn btn-dark rounded-pill w-100"
+                   href="https://wa.me/5491123843612?text=Hola%2C%20quisiera%20consultar%20por%20las%20galletitas"
+                   target="_blank" rel="noopener">
+                    Consultar por WhatsApp
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- MODAL SCONES -->
+<div class="modal fade" id="modalScones" tabindex="-1"
+     aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title h5">Scones artesanales</h2>
+                <button type="button" class="btn-close btn-close-white"
+                        data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+            <div class="modal-body">
+                <p class="mb-2">
+                    Scones para acompañar desayunos y meriendas.
+                </p>
+                <p class="price-tag">$15.000 el ¼ kg</p>
+                <p class="small text-muted">
+                    Consultá por disponibilidad.
+                </p>
+                <a class="btn btn-dark rounded-pill w-100"
+                   href="https://wa.me/5491123843612?text=Hola%2C%20quisiera%20consultar%20por%20los%20scones"
+                   target="_blank" rel="noopener">
+                    Consultar por WhatsApp
+                </a>
             </div>
         </div>
     </div>
