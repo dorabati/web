@@ -1,36 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    
-    <!-- Página Principal -->
-    <url>
-        <loc>https://dorabati.com.ar/</loc>
-        <lastmod>2026-03-01</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>1.0</priority>
-    </url>
-
-    <!-- Subpágina Pastelería Premium & Festejos -->
-    <url>
-        <loc>https://dorabati.com.ar/premium.html</loc>
-        <lastmod>2026-03-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-
-    <!-- Subpágina Menú Keto & Saludable -->
-    <url>
-        <loc>https://dorabati.com.ar/keto.html</loc>
-        <lastmod>2026-03-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-
-    <!-- Subpágina Cumples Infantiles -->
-    <url>
-        <loc>https://dorabati.com.ar/cumples.html</loc>
-        <lastmod>2026-03-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-
+  <url><loc>https://dorabati.com.ar/</loc><lastmod>2026-10-28</lastmod></url>
+  <url><loc>https://dorabati.com.ar/tortas.html</loc><lastmod>2026-10-28</lastmod></url>
+  <url><loc>https://dorabati.com.ar/meriendas.html</loc><lastmod>2026-10-28</lastmod></url>
+  <url><loc>https://dorabati.com.ar/postres.html</loc><lastmod>2026-10-28</lastmod></url>
+  <url><loc>https://dorabati.com.ar/salados.html</loc><lastmod>2026-10-28</lastmod></url>
+  <url><loc>https://dorabati.com.ar/cumples.html</loc><lastmod>2026-10-28</lastmod></url>
 </urlset>
