@@ -1,0 +1,321 @@
+/* =========================================================
+   Dora Batí · estilos compartidos de todo el sitio
+   Ubicación: assets/css/dorabati.css
+   Paleta tomada del catálogo en PDF
+   ========================================================= */
+
+:root {
+  --cacao: #2D1B14;          /* menú, encabezados y pie */
+  --vino: #7B2D42;           /* botones, precios y detalles */
+  --vino-oscuro: #5F1F31;    /* hover */
+  --rosa: #E4BACD;           /* franjas y detalles suaves */
+  --panel: #F2DDE4;          /* secciones alternadas */
+  --fondo: #FBEEF1;          /* fondo general */
+  --dorado: #D4A96A;         /* acentos sobre fondo oscuro */
+  --salvia: #3F6B4A;         /* low carb / keto */
+  --salvia-claro: #E3EFE5;
+  --arena: #F4E7D3;          /* integral */
+  --whatsapp: #0F7A41;       /* solo botones de WhatsApp */
+  --whatsapp-oscuro: #0B5E32;
+  --texto: #3B2A22;
+  --texto-suave: #6A5A53;
+}
+
+html { scroll-behavior: smooth; scroll-padding-top: 84px; }
+
+body {
+  font-family: 'Jost', sans-serif;
+  background-color: var(--fondo);
+  color: var(--texto);
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700;
+  color: var(--cacao);
+}
+
+a { color: var(--vino); }
+a:hover { color: var(--vino-oscuro); }
+
+.text-muted { color: var(--texto-suave) !important; }
+.bg-panel { background-color: var(--panel); }
+
+:focus-visible { outline: 3px solid var(--vino); outline-offset: 2px; }
+
+/* ---------- MENÚ ---------- */
+
+.navbar-dora {
+  background-color: var(--cacao);
+  padding: .6rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, .08);
+  --bs-navbar-color: rgba(255, 255, 255, .88);
+  --bs-navbar-hover-color: var(--dorado);
+  --bs-navbar-active-color: var(--dorado);
+  --bs-navbar-brand-color: #fff;
+  --bs-navbar-brand-hover-color: var(--dorado);
+}
+
+.navbar-dora .navbar-brand { display: flex; align-items: center; gap: 10px; font-family: 'Roboto Slab', serif; font-weight: 600; }
+.navbar-dora .nav-link.active { font-weight: 600; }
+.logo-nav { width: 44px; height: 44px; border-radius: 50%; }
+
+/* ---------- ENCABEZADOS ---------- */
+
+.header-catalog {
+  background: linear-gradient(135deg, #2D1B14 0%, #4A2230 100%);
+  border-bottom: 4px solid var(--dorado);
+  color: #fff;
+  padding: 48px 0 40px;
+  text-align: center;
+}
+
+.header-catalog h1 { color: var(--rosa); max-width: 850px; margin: 0 auto 12px; }
+.header-catalog p { max-width: 760px; margin-left: auto; margin-right: auto; color: rgba(255, 255, 255, .92); }
+
+.breadcrumb-dora { font-size: .9rem; margin-bottom: 14px; color: rgba(255, 255, 255, .75); }
+.breadcrumb-dora a { color: var(--rosa); text-decoration: none; }
+.breadcrumb-dora a:hover { text-decoration: underline; }
+
+.hero {
+  min-height: 75vh;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  background-image: linear-gradient(rgba(45, 27, 20, .62), rgba(45, 27, 20, .62)), url('../img/header-bg.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.hero h1 { color: #fff; }
+.hero-content { max-width: 850px; }
+.kicker { color: var(--dorado); font-weight: 600; letter-spacing: 1px; }
+.accent { color: var(--rosa); }
+
+.section-heading { border-bottom: 2px solid rgba(123, 45, 66, .22); padding-bottom: 10px; margin-bottom: .5rem; }
+.section-desc { color: var(--texto-suave); margin-bottom: 1.5rem; }
+
+/* ---------- ETIQUETAS ---------- */
+
+.tag {
+  display: inline-block;
+  white-space: nowrap;
+  border-radius: 20px;
+  padding: 3px 11px;
+  font-size: .78rem;
+  font-weight: 600;
+  line-height: 1.5;
+  background: #fff;
+  color: var(--vino);
+  border: 1px solid rgba(123, 45, 66, .35);
+}
+
+.tag-low { background: var(--salvia-claro); color: var(--salvia); border-color: rgba(63, 107, 74, .4); }
+.tag-keto { background: var(--salvia); color: #fff; border-color: var(--salvia); }
+.tag-int { background: var(--arena); color: #573619; border-color: rgba(87, 54, 25, .3); }
+.tag-kcal { background: var(--vino); color: #fff; border-color: var(--vino); }
+
+/* ---------- CAJA DE VERSIONES Y AVISOS ---------- */
+
+.versiones { background: var(--panel); border: 1px solid rgba(123, 45, 66, .18); border-radius: 18px; padding: 22px 26px; }
+.versiones h2 { font-size: 1.2rem; margin-bottom: .5rem; }
+
+.versiones-lista {
+  list-style: none;
+  padding: 0;
+  margin: 14px 0 0;
+  display: grid;
+  gap: 10px 28px;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+}
+
+.versiones-lista li { display: flex; gap: 10px; align-items: flex-start; font-size: .95rem; }
+.versiones-lista .tag { flex-shrink: 0; }
+
+.aviso {
+  background: #fff;
+  border: 1px solid rgba(123, 45, 66, .15);
+  border-left: 5px solid var(--vino);
+  border-radius: 12px;
+  padding: 16px 20px;
+  font-size: .95rem;
+}
+
+/* ---------- TARJETAS DE PRODUCTO ---------- */
+
+.card-product {
+  height: 100%;
+  background: #fff;
+  border: 1px solid rgba(123, 45, 66, .12);
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(45, 27, 20, .06);
+  transition: transform .2s, box-shadow .2s;
+}
+
+.card-product:hover { transform: translateY(-4px); box-shadow: 0 12px 26px rgba(123, 45, 66, .18); }
+
+.card-img-container { height: 220px; overflow: hidden; background: var(--panel); }
+.card-img-container img { display: block; width: 100%; height: 100%; object-fit: cover; }
+
+.card-meta { font-size: .9rem; color: var(--texto-suave); }
+.price-tag { font-size: 1.3rem; font-weight: 700; color: var(--vino); margin-bottom: .25rem; }
+.price-int { font-size: .95rem; margin-bottom: 1rem; }
+.price-int strong { font-weight: 700; }
+
+.pack-banner { background: linear-gradient(135deg, #2D1B14 0%, #4A2230 100%); color: #fff; border-radius: 18px; padding: 22px 26px; border: 1px solid var(--dorado); }
+.pack-banner h3 { color: var(--rosa); }
+.pack-banner .price-tag { color: var(--dorado); font-size: 1.8rem; }
+
+/* ---------- BOTONES ---------- */
+
+.btn-dora {
+  background: var(--vino);
+  border: 1px solid var(--vino);
+  color: #fff;
+  border-radius: 30px;
+  padding: .55rem 1.4rem;
+  font-weight: 500;
+}
+
+.btn-dora:hover, .btn-dora:focus { background: var(--vino-oscuro); border-color: var(--vino-oscuro); color: #fff; }
+
+.btn-wa {
+  background: var(--whatsapp);
+  border: 1px solid var(--whatsapp);
+  color: #fff;
+  border-radius: 30px;
+  padding: .55rem 1.4rem;
+  font-weight: 600;
+}
+
+.btn-wa:hover, .btn-wa:focus { background: var(--whatsapp-oscuro); border-color: var(--whatsapp-oscuro); color: #fff; }
+
+.btn-outline-dora {
+  background: transparent;
+  border: 1px solid var(--vino);
+  color: var(--vino);
+  border-radius: 30px;
+  padding: .5rem 1.2rem;
+  font-weight: 500;
+}
+
+.btn-outline-dora:hover, .btn-outline-dora:focus { background: var(--vino); border-color: var(--vino); color: #fff; }
+
+.btn-warning {
+  --bs-btn-color: var(--cacao);
+  --bs-btn-bg: var(--dorado);
+  --bs-btn-border-color: var(--dorado);
+  --bs-btn-hover-color: var(--cacao);
+  --bs-btn-hover-bg: #E3BF85;
+  --bs-btn-hover-border-color: #E3BF85;
+  --bs-btn-active-color: var(--cacao);
+  --bs-btn-active-bg: #E3BF85;
+  --bs-btn-active-border-color: #E3BF85;
+  font-weight: 600;
+}
+
+/* ---------- MODALES Y TABLAS DE PRECIOS ---------- */
+
+.modal-content { border: 0; border-radius: 18px; overflow: hidden; color: var(--texto); background: #fff; }
+.modal-header { background: var(--cacao); border-bottom: 3px solid var(--dorado); }
+.modal-title { color: var(--rosa); font-size: 1.25rem; }
+
+.tabla-precios { margin-bottom: 0; --bs-table-bg: transparent; --bs-table-color: var(--texto); }
+.tabla-precios th { font-size: .78rem; text-transform: uppercase; letter-spacing: .4px; color: var(--texto-suave); font-weight: 600; }
+.tabla-precios th, .tabla-precios td { padding: .6rem .4rem; vertical-align: middle; }
+.tabla-precios th:not(:first-child), .tabla-precios td:not(:first-child) { text-align: right; white-space: nowrap; }
+.tabla-precios td strong { color: var(--vino); }
+.tabla-precios .sub { display: block; font-size: .85rem; color: var(--texto-suave); }
+
+/* ---------- PÁGINA DE INICIO ---------- */
+
+.catalog-link { display: block; height: 100%; color: inherit; text-decoration: none; }
+.catalog-link:hover { color: inherit; }
+
+.catalog-card {
+  border: 0;
+  border-radius: 18px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(45, 27, 20, .08);
+  transition: transform .2s, box-shadow .2s;
+}
+
+.catalog-card:hover { transform: translateY(-4px); box-shadow: 0 12px 26px rgba(123, 45, 66, .2); }
+.catalog-card img { display: block; width: 100%; height: auto; }
+
+.version-card { background: #fff; border: 1px solid rgba(123, 45, 66, .12); border-top: 4px solid var(--vino); border-radius: 18px; padding: 22px; height: 100%; }
+.version-card h3 { font-size: 1.1rem; margin: 12px 0 8px; }
+.version-card p { margin-bottom: 0; font-size: .95rem; }
+
+.paso { text-align: center; padding: 8px 12px; }
+.paso p { margin-bottom: 0; font-size: .95rem; }
+
+.paso-num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  margin-bottom: 12px;
+  border-radius: 50%;
+  background: var(--vino);
+  color: #fff;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+.accordion-dora .accordion-item { border-color: rgba(123, 45, 66, .18); }
+.accordion-dora .accordion-button { font-family: 'Roboto Slab', serif; font-weight: 600; color: var(--cacao); background: #fff; }
+.accordion-dora .accordion-button:not(.collapsed) { background: var(--rosa); color: var(--cacao); box-shadow: none; }
+.accordion-dora .accordion-button:focus { box-shadow: 0 0 0 .2rem rgba(123, 45, 66, .25); }
+
+/* ---------- LLAMADO FINAL, PIE Y WHATSAPP ---------- */
+
+.cta-final { background: var(--rosa); text-align: center; }
+.cta-final h2 { color: var(--cacao); }
+.cta-final .text-muted { color: var(--texto) !important; }
+
+.footer-dora { background: var(--cacao); color: #fff; }
+.footer-dora a { color: #fff; text-decoration: none; }
+.footer-dora a:hover { color: var(--dorado); text-decoration: underline; }
+.footer-title { font-family: 'Roboto Slab', serif; font-weight: 700; font-size: 1.1rem; color: var(--rosa); margin-bottom: .75rem; }
+
+.btn-whatsapp-float {
+  position: fixed;
+  bottom: 22px;
+  right: 22px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 12px 22px;
+  background: var(--whatsapp);
+  color: #fff;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, .28);
+  transition: transform .2s, background-color .2s;
+}
+
+.btn-whatsapp-float:hover { background: var(--whatsapp-oscuro); color: #fff; transform: scale(1.05); }
+
+/* ---------- CELULAR Y ACCESIBILIDAD ---------- */
+
+@media (max-width: 576px) {
+  .header-catalog { padding: 40px 18px 32px; }
+  .header-catalog h1 { font-size: 2rem; }
+  .card-img-container { height: 200px; }
+  .btn-whatsapp-float { right: 12px; bottom: 12px; padding: 10px 16px; }
+  .versiones { padding: 18px; }
+  .logo-nav { width: 40px; height: 40px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .card-product, .catalog-card, .btn-whatsapp-float { transition: none; }
+  .card-product:hover, .catalog-card:hover, .btn-whatsapp-float:hover { transform: none; }
+}
