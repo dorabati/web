@@ -1,27 +1,34 @@
-
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-AR">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Postres Individuales Keto & Light | Dora Batí</title>
-  <meta name="description" content="Postres individuales Keto & Light, sin azúcar agregada y con porciones controladas. Mousses, crumbles y packs de antojos elaborados a pedido en Recoleta, CABA.">
+  <title>Postres individuales sin azúcar y keto en Recoleta | Dora Batí</title>
+  <meta name="description" content="Mousses y crumbles en pote con calorías controladas y packs de porciones para freezar. Sin azúcar agregada, low carb y keto. Hechos a pedido en Recoleta, CABA.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
   <link rel="canonical" href="https://dorabati.com.ar/postres.html">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Postres Individuales Keto & Light | Dora Batí">
-  <meta property="og:description" content="Pequeños placeres, porciones controladas y mucho sabor para darte un gusto.">
-  <meta property="og:image" content="https://dorabati.com.ar/assets/img/keto/postre.jpeg">
-  <meta property="og:url" content="https://dorabati.com.ar/postres.html">
-  <meta property="og:locale" content="es_AR">
 
-  <link rel="icon" href="assets/favicon.ico">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Dora Batí">
+  <meta property="og:title" content="Postres individuales sin azúcar y keto | Dora Batí">
+  <meta property="og:description" content="Pequeños placeres, porciones controladas y mucho sabor para darte un gusto. Aptos para diabéticos.">
+  <meta property="og:url" content="https://dorabati.com.ar/postres.html">
+  <meta property="og:image" content="https://dorabati.com.ar/assets/img/keto/postre.jpeg">
+  <meta property="og:locale" content="es_AR">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#2D1B14">
+
+  <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon-96x96.png">
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&family=Roboto+Slab:wght@500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&family=Roboto+Slab:wght@600;700&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+  <link href="assets/css/dorabati.css?v=1" rel="stylesheet">
 
-  <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y6DNZGLE23"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -30,377 +37,280 @@
     gtag('config', 'G-Y6DNZGLE23');
   </script>
 
-  <style>
-    :root {
-      --rosa-nube: #FBF1F5;
-      --rosa: #E4BACD;
-      --chocolate: #573619;
-      --malva: #8A5A77;
-      --texto: #4B403B;
-    }
-
-    body {
-      font-family: 'Jost', sans-serif;
-      color: var(--texto);
-      background: #fff;
-    }
-
-    h1, h2, h3, h4 {
-      font-family: 'Roboto Slab', serif;
-      color: var(--chocolate);
-    }
-
-    .navbar {
-      background: var(--rosa-nube);
-    }
-
-    .navbar-brand {
-      color: var(--chocolate);
-      font-family: 'Roboto Slab', serif;
-      font-weight: 600;
-    }
-
-    .nav-link {
-      color: var(--chocolate);
-    }
-
-    .hero {
-      background: var(--rosa-nube);
-      text-align: center;
-      padding: 65px 0 55px;
-    }
-
-    .hero p {
-      max-width: 650px;
-      margin: 18px auto 0;
-      font-size: 1.1rem;
-    }
-
-    .section-heading {
-      border-bottom: 2px solid var(--rosa);
-      padding-bottom: 12px;
-      margin-bottom: 12px;
-    }
-
-    .section-description {
-      color: #756963;
-      margin-bottom: 26px;
-    }
-
-    .product-card {
-      border: 1px solid #f0e6e9;
-      border-radius: 18px;
-      overflow: hidden;
-      height: 100%;
-      transition: transform .2s ease, box-shadow .2s ease;
-    }
-
-    .product-card:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 8px 24px rgba(87, 54, 25, .10);
-    }
-
-    .product-card img {
-      width: 100%;
-      height: 245px;
-      object-fit: cover;
-    }
-
-    .product-card .card-body {
-      padding: 24px;
-    }
-
-    .tag {
-      display: inline-block;
-      border-radius: 20px;
-      background: var(--rosa-nube);
-      color: var(--malva);
-      padding: 5px 12px;
-      font-size: .85rem;
-    }
-
-    .price {
-      color: var(--chocolate);
-      font-size: 1.25rem;
-      font-weight: 700;
-    }
-
-    .btn-dora {
-      background: var(--chocolate);
-      border: 1px solid var(--chocolate);
-      color: #fff;
-      border-radius: 30px;
-      padding: 10px 22px;
-    }
-
-    .btn-dora:hover {
-      background: var(--malva);
-      border-color: var(--malva);
-      color: #fff;
-    }
-
-    .btn-outline-dora {
-      border: 1px solid var(--chocolate);
-      color: var(--chocolate);
-      border-radius: 30px;
-      padding: 9px 20px;
-    }
-
-    .btn-outline-dora:hover {
-      background: var(--chocolate);
-      color: #fff;
-    }
-
-    .info-box {
-      background: var(--rosa-nube);
-      border-radius: 18px;
-      padding: 28px;
-    }
-
-    .modal-header {
-      background: var(--rosa-nube);
-    }
-
-    .modal-title {
-      color: var(--chocolate);
-    }
-
-    footer {
-      background: var(--chocolate);
-      color: #fff;
-    }
-
-    .whatsapp-float {
-      position: fixed;
-      right: 20px;
-      bottom: 20px;
-      z-index: 1000;
-      background: #25D366;
-      color: white;
-      border-radius: 50px;
-      padding: 13px 18px;
-      text-decoration: none;
-      box-shadow: 0 3px 12px rgba(0,0,0,.18);
-      font-weight: 600;
-    }
-
-    .whatsapp-float:hover {
-      background: #1eae54;
-      color: white;
-    }
-
-    @media (max-width: 576px) {
-      .hero {
-        padding: 45px 18px;
-      }
-
-      .product-card img {
-        height: 220px;
-      }
-    }
-  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://dorabati.com.ar/" },
+      { "@type": "ListItem", "position": 2, "name": "Postres individuales", "item": "https://dorabati.com.ar/postres.html" }
+    ]
+  }
+  </script>
 </head>
 
 <body>
 
-  <!-- NAVEGACIÓN -->
-  <nav class="navbar navbar-expand-lg">
+<!-- MENÚ -->
+<nav class="navbar navbar-expand-lg navbar-dark navbar-dora sticky-top" aria-label="Menú principal">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+      <img class="logo-nav" src="assets/img/logo-dorabati.png" alt="Logo de Dora Batí" width="44" height="44">
+      <span>Dora Batí</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menú">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="menuPrincipal">
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="tortas.html">Tortas</a></li>
+        <li class="nav-item"><a class="nav-link" href="meriendas.html">Desayunos y meriendas</a></li>
+        <li class="nav-item"><a class="nav-link active" aria-current="page" href="postres.html">Postres individuales</a></li>
+        <li class="nav-item"><a class="nav-link" href="salados.html">Salado y viandas</a></li>
+        <li class="nav-item"><a class="nav-link" href="cumples.html">Cumples</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ENCABEZADO -->
+<header class="header-catalog">
+  <div class="container">
+    <nav class="breadcrumb-dora" aria-label="Ruta de navegación">
+      <a href="index.html">Inicio</a> / <span aria-current="page">Postres individuales</span>
+    </nav>
+    <h1>Postres individuales</h1>
+    <p class="fs-5 mb-2">Pequeños placeres, porciones controladas y mucho sabor para darte un gusto.</p>
+    <p class="mb-0">Disfrutá lo dulce, cuidando de vos. Hechos a pedido en Recoleta, CABA.</p>
+  </div>
+</header>
+
+<main>
+
+  <!-- VERSIONES -->
+  <section class="pt-4 pb-2" aria-labelledby="versiones-titulo">
     <div class="container">
-      <a class="navbar-brand" href="index.html">Dora Batí</a>
-
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menú">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="menuPrincipal">
-        <ul class="navbar-nav ms-auto align-items-lg-center">
-          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-          <li class="nav-item"><a class="nav-link" href="tortas.html">Tortas</a></li>
-          <li class="nav-item"><a class="nav-link" href="meriendas.html">Desayunos y meriendas</a></li>
-          <li class="nav-item"><a class="nav-link" href="salados.html">Salado y viandas</a></li>
-          <li class="nav-item"><a class="nav-link active" href="postres.html">Postres individuales</a></li>
-          <li class="nav-item"><a class="nav-link" href="cumples.html">Cumples</a></li>
+      <div class="versiones">
+        <h2 id="versiones-titulo">Postres sin azúcar agregada, pensados para cuidarte</h2>
+        <p class="mb-0">
+          Todos los postres de esta página son sin azúcar agregada y aptos para personas con diabetes, con ingredientes
+          de bajo índice glucémico. Consultame por los ingredientes de cada variedad para elegir la opción que mejor se
+          adapte a vos.
+        </p>
+        <ul class="versiones-lista">
+          <li><span class="tag">Sin azúcar agregada</span><span>Apto para diabéticos.</span></li>
+          <li><span class="tag tag-keto">Keto</span><span>Postres en pote y Matilda del Pack Antojo.</span></li>
+          <li><span class="tag tag-low">Low carb</span><span>Cheesecake y Chocotorta del Pack Antojo, por su base de queso blanco.</span></li>
+          <li><span class="tag tag-int">Integral</span><span>Pack Antojo con harina de trigo integral, más económico. Contiene gluten.</span></li>
         </ul>
+        <p class="small mt-3 mb-0">Según el pedido, también puedo prepararlo con o sin lactosa.</p>
       </div>
     </div>
-  </nav>
+  </section>
 
-  <!-- PRESENTACIÓN -->
-  <header class="hero">
+  <!-- POSTRES EN POTE -->
+  <section class="py-4" aria-labelledby="potes-titulo">
     <div class="container">
-      <h1>Postres individuales</h1>
-      <p>Pequeños placeres, porciones controladas y mucho sabor para darte un gusto.</p>
+      <h2 class="h3 section-heading" id="potes-titulo">Postres en pote Keto &amp; Light</h2>
+      <p class="section-desc">Porciones individuales con calorías controladas (valores aproximados). Se conservan en heladera.</p>
+
+      <div class="row g-4">
+
+        <!-- CRUMBLE -->
+        <div class="col-sm-6 col-lg-3">
+          <article class="card card-product">
+            <div class="card-img-container">
+              <img src="assets/img/keto/postre.jpeg" alt="Crumble de manzana en pote individual" loading="lazy" decoding="async">
+            </div>
+            <div class="card-body p-4 text-center d-flex flex-column">
+              <div class="mb-2"><span class="tag tag-kcal">185 kcal aprox.</span></div>
+              <h3 class="h5">Crumble de manzana o pera</h3>
+              <p class="text-muted small mb-2">Manzana (o pera) y canela con una cubierta crocante.</p>
+              <p class="price-tag mt-auto mb-3">$7.000</p>
+              <a class="btn btn-outline-dora" href="https://wa.me/5491123843612?text=Hola%2C%20quiero%20pedir%20postres%3A%20crumble%20de%20manzana%20o%20pera" target="_blank" rel="noopener">Pedir</a>
+            </div>
+          </article>
+        </div>
+
+        <!-- MOUSSE LIMÓN O NARANJA -->
+        <div class="col-sm-6 col-lg-3">
+          <article class="card card-product">
+            <div class="card-img-container">
+              <img src="assets/img/postres/limon.jpeg" alt="Mousse de limón en pote individual" loading="lazy" decoding="async">
+            </div>
+            <div class="card-body p-4 text-center d-flex flex-column">
+              <div class="mb-2"><span class="tag tag-kcal">100 kcal aprox.</span></div>
+              <h3 class="h5">Mousse de limón o naranja</h3>
+              <p class="text-muted small mb-2">Una opción fresca, cítrica y liviana.</p>
+              <p class="price-tag mt-auto mb-3">$7.000</p>
+              <a class="btn btn-outline-dora" href="https://wa.me/5491123843612?text=Hola%2C%20quiero%20pedir%20postres%3A%20mousse%20de%20lim%C3%B3n%20o%20naranja" target="_blank" rel="noopener">Pedir</a>
+            </div>
+          </article>
+        </div>
+
+        <!-- MOUSSE CHOCOLATE -->
+        <div class="col-sm-6 col-lg-3">
+          <article class="card card-product">
+            <div class="card-img-container">
+              <img src="assets/img/postres/chocolate.jpeg" alt="Mousse de chocolate en pote individual" loading="lazy" decoding="async">
+            </div>
+            <div class="card-body p-4 text-center d-flex flex-column">
+              <div class="mb-2"><span class="tag tag-kcal">120 kcal aprox.</span></div>
+              <h3 class="h5">Mousse de chocolate</h3>
+              <p class="text-muted small mb-2">Todo el sabor del chocolate en una porción individual.</p>
+              <p class="price-tag mt-auto mb-3">$7.000</p>
+              <a class="btn btn-outline-dora" href="https://wa.me/5491123843612?text=Hola%2C%20quiero%20pedir%20postres%3A%20mousse%20de%20chocolate" target="_blank" rel="noopener">Pedir</a>
+            </div>
+          </article>
+        </div>
+
+        <!-- MOUSSE FRUTILLA -->
+        <div class="col-sm-6 col-lg-3">
+          <article class="card card-product">
+            <div class="card-img-container">
+              <img src="assets/img/postres/frutilla.jpeg" alt="Mousse de frutilla en pote individual" loading="lazy" decoding="async">
+            </div>
+            <div class="card-body p-4 text-center d-flex flex-column">
+              <div class="mb-2"><span class="tag tag-kcal">165 kcal aprox.</span></div>
+              <h3 class="h5">Mousse de frutilla</h3>
+              <p class="text-muted small mb-2">Un postre suave y cremoso con sabor a frutilla.</p>
+              <p class="price-tag mt-auto mb-3">$7.000</p>
+              <a class="btn btn-outline-dora" href="https://wa.me/5491123843612?text=Hola%2C%20quiero%20pedir%20postres%3A%20mousse%20de%20frutilla" target="_blank" rel="noopener">Pedir</a>
+            </div>
+          </article>
+        </div>
+
+      </div>
+
+      <!-- PACK x4 POTES -->
+      <div class="pack-banner mt-4 d-md-flex align-items-center justify-content-between gap-4 text-center text-md-start">
+        <div>
+          <h3 class="h4 mb-1">Pack x4 potes</h3>
+          <p class="mb-3 mb-md-0">Elegí 4 potes entre los sabores disponibles y ahorrá $3.000.</p>
+        </div>
+        <div class="text-md-end">
+          <p class="price-tag mb-2">$25.000</p>
+          <a class="btn btn-warning rounded-pill px-4" href="https://wa.me/5491123843612?text=Hola%2C%20quiero%20pedir%20el%20pack%20x4%20potes" target="_blank" rel="noopener">Pedir el pack</a>
+        </div>
+      </div>
     </div>
-  </header>
+  </section>
 
-  <main class="container py-5">
-
-    <!-- POSTRES KETO & LIGHT -->
-    <section class="mb-5">
-      <h2 class="section-heading">Postres Keto &amp; Light</h2>
-      <p class="section-description">
-        Opciones sin azúcar agregada, pensadas para disfrutar de algo dulce en una porción individual.
-      </p>
-
-      <div class="info-box text-center mb-4">
-        <p class="mb-2"><strong>Keto · Sin azúcar agregada · Aptos para diabéticos</strong></p>
-        <p class="mb-0">Consultá por los ingredientes de cada variedad para elegir la opción que mejor se adapte a tus necesidades.</p>
-      </div>
-
-      
-              
-      <div class="row g-4">
-
-        <!-- Crumble de manzana -->
-        <div class="col-sm-6 col-lg-4">
-          <article class="card product-card shadow-sm">
-            <img src="assets/img/keto/postre.jpeg" alt="Crumble de manzana y canela" loading="lazy">
-            <div class="card-body text-center d-flex flex-column">
-              <span class="tag align-self-center mb-3">185 kcal aprox.</span>
-              <h4 class="h5">Crumble de manzana y canela</h4>
-              <p class="text-muted">Manzana y canela con una cubierta crocante.</p>
-              <p class="price mt-auto mb-0">$7.000</p>
-            </div>
-          </article>
-        </div>
-
-        <!-- Mousse de limón -->
-        <div class="col-sm-6 col-lg-4">
-          <article class="card product-card shadow-sm">
-            <img src="assets/img/postres/limon.jpeg" alt="Mousse de limón" loading="lazy">
-            <div class="card-body text-center d-flex flex-column">
-              <span class="tag align-self-center mb-3">100 kcal aprox.</span>
-              <h4 class="h5">Mousse de limón o naranja</h4>
-              <p class="text-muted">Una opción fresca, cítrica y liviana.</p>
-              <p class="price mt-auto mb-0">$7.000</p>
-            </div>
-          </article>
-        </div>
-
-        <!-- Mousse de chocolate -->
-        <div class="col-sm-6 col-lg-4">
-          <article class="card product-card shadow-sm">
-            <img src="assets/img/postres/chocolate.jpeg" alt="Mousse de chocolate" loading="lazy">
-            <div class="card-body text-center d-flex flex-column">
-              <span class="tag align-self-center mb-3">120 kcal aprox.</span>
-              <h4 class="h5">Mousse de chocolate</h4>
-              <p class="text-muted">Todo el sabor del chocolate en una porción individual.</p>
-              <p class="price mt-auto mb-0">$7.000</p>
-            </div>
-          </article>
-        </div>
-
-        <!-- Postre de frutilla -->
-        <div class="col-sm-6 col-lg-4">
-          <article class="card product-card shadow-sm">
-            <img src="assets/img/postres/frutilla.jpeg" alt="Postre individual de frutilla" loading="lazy">
-            <div class="card-body text-center d-flex flex-column">
-              <span class="tag align-self-center mb-3">165 kcal aprox.</span>
-              <h4 class="h5">Mousse de Frutilla</h4>
-              <p class="text-muted">Un postre suave y cremoso con sabor a frutilla.</p>
-              <p class="price mt-auto mb-0">$7.000</p>
-            </div>
-          </article>
-        </div>
-
-      </div>
-
-
-    <!-- PACK ANTOJO -->
-    <section class="mb-5">
-      <h2 class="section-heading">Pack Antojo</h2>
-      <p class="section-description">
-        Cuatro porciones individuales para tener en el freezer y disfrutar de a una.
-      </p>
+  <!-- PACK ANTOJO -->
+  <section class="py-4" aria-labelledby="antojo-titulo">
+    <div class="container">
+      <h2 class="h3 section-heading" id="antojo-titulo">Pack Antojo</h2>
+      <p class="section-desc">Cuatro porciones individuales de torta para tener en el freezer y disfrutar de a una.</p>
 
       <div class="row g-4">
-
         <div class="col-md-6 col-lg-4">
-          <article class="card product-card shadow-sm">
-            <img src="assets/img/keto/pack.jpeg" alt="Pack de porciones individuales de torta" loading="lazy">
-            <div class="card-body text-center d-flex flex-column">
-              <span class="tag align-self-center mb-3">Listo para freezar</span>
-              <h3 class="h5">Pack de 4 porciones</h3>
-              <p class="text-muted">Cuatro porciones individuales de un mismo sabor, en envases herméticos.</p>
-              <p class="price mb-3">Desde $30.000</p>
-              <button class="btn btn-outline-dora mt-auto" data-bs-toggle="modal" data-bs-target="#modalAntojo">
-                Ver sabores y precios
-              </button>
+          <article class="card card-product">
+            <div class="card-img-container">
+              <img src="assets/img/keto/pack.jpeg" alt="Porción individual de torta en envase hermético para freezar" loading="lazy" decoding="async">
+            </div>
+            <div class="card-body p-4 text-center d-flex flex-column">
+              <div class="mb-2"><span class="tag">Listo para freezar</span></div>
+              <h3 class="h5">Pack Antojo Individual</h3>
+              <p class="text-muted small mb-2">4 porciones individuales (5 × 5 cm) de un mismo sabor, en envases herméticos. Elegí tu variedad favorita.</p>
+              <p class="price-tag mt-auto">Desde $34.000</p>
+              <p class="price-int"><span class="tag tag-int">Integral</span> desde <strong>$32.000</strong></p>
+              <button type="button" class="btn btn-outline-dora" data-bs-toggle="modal" data-bs-target="#modalAntojo">Ver sabores y precios</button>
             </div>
           </article>
         </div>
-
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- CONTACTO -->
-    <section class="mb-4">
-      <div class="info-box text-center">
-        <h2 class="h4 mb-3">¿Tenés ganas de algo dulce?</h2>
-        <p class="mb-4">Los productos se elaboran a pedido. Escribime para consultar disponibilidad y coordinar tu pedido.</p>
-        <a class="btn btn-dora" href="https://wa.me/5491123843612?text=Hola%2C%20quiero%20hacer%20un%20pedido%20de%20postres" target="_blank" rel="noopener">
-          Hacer mi pedido
-        </a>
+  <!-- AVISO -->
+  <section class="pb-4">
+    <div class="container">
+      <div class="aviso">
+        <strong>Importante:</strong> usamos ingredientes sin TACC, pero cocinamos otros productos con gluten en el mismo
+        taller y no podemos asegurar que no haya contaminación cruzada. Nuestros productos no son aptos para celíacos
+        ni para alergias severas. Todo se elabora a pedido, con al menos 24 hs de anticipación.
+        <a href="index.html#como-pedir">Cómo pedir y envíos</a>.
       </div>
-    </section>
+    </div>
+  </section>
 
-  </main>
+  <!-- CONTACTO -->
+  <section class="py-5 cta-final">
+    <div class="container">
+      <h2 class="h4 mb-3">¿Tenés ganas de algo dulce?</h2>
+      <p class="text-muted mb-4">Los productos se elaboran a pedido. Escribime para consultar disponibilidad y coordinar tu pedido.</p>
+      <a class="btn btn-wa px-4" href="https://wa.me/5491123843612?text=Hola%2C%20quiero%20hacer%20un%20pedido%20de%20postres" target="_blank" rel="noopener"><i class="fab fa-whatsapp me-1" aria-hidden="true"></i>Hacer mi pedido</a>
+    </div>
+  </section>
 
-  <!-- MODAL PACK ANTOJO -->
-  <div class="modal fade" id="modalAntojo" tabindex="-1" aria-labelledby="modalAntojoLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h2 class="modal-title fs-5" id="modalAntojoLabel">Pack Antojo</h2>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
-        </div>
+</main>
 
-        <div class="modal-body">
-          <p>Cuatro porciones individuales de un mismo sabor, presentadas en envases herméticos y listas para freezar.</p>
-          <p><strong>Los packs no combinan sabores distintos.</strong></p>
-
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item d-flex justify-content-between gap-3">
-              <span>Coco &amp; dulce de leche</span><strong>$30.000</strong>
-            </li>
-            <li class="list-group-item d-flex justify-content-between gap-3">
-              <span>Cheesecake</span><strong>$34.000</strong>
-            </li>
-            <li class="list-group-item d-flex justify-content-between gap-3">
-              <span>Chocotorta</span><strong>$34.000</strong>
-            </li>
-            <li class="list-group-item d-flex justify-content-between gap-3">
-              <span>Sueño de Coco</span><strong>$34.000</strong>
-            </li>
-            <li class="list-group-item d-flex justify-content-between gap-3">
-              <span>Matilda</span><strong>$40.000</strong>
-            </li>
-          </ul>
-        </div>
-
-        <div class="modal-footer">
-          <a class="btn btn-dora" href="https://wa.me/5491123843612?text=Hola%2C%20quiero%20consultar%20por%20el%20Pack%20Antojo" target="_blank" rel="noopener">
-            Consultar por WhatsApp
-          </a>
-        </div>
+<!-- MODAL PACK ANTOJO -->
+<div class="modal fade" id="modalAntojo" tabindex="-1" aria-labelledby="modalAntojoLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title" id="modalAntojoLabel">Pack Antojo Individual</h2>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body">
+        <p>Cuatro porciones individuales de 5 × 5 cm, presentadas en envases herméticos y listas para freezar. <strong>Cada pack es de un solo sabor:</strong> no se combinan sabores dentro del mismo pack.</p>
+        <table class="table tabla-precios mb-3">
+          <thead><tr><th>Sabor</th><th>Precio</th><th>Integral</th></tr></thead>
+          <tbody>
+            <tr><td>Matilda <span class="tag tag-keto">Keto</span></td><td><strong>$40.000</strong></td><td>$38.000</td></tr>
+            <tr><td>Cheesecake <span class="tag tag-low">Low carb</span></td><td><strong>$34.000</strong></td><td>$32.000</td></tr>
+            <tr><td>Chocotorta <span class="tag tag-low">Low carb</span></td><td><strong>$34.000</strong></td><td>$32.000</td></tr>
+            <tr><td>Selva Negra</td><td><strong>$34.000</strong></td><td>$32.000</td></tr>
+            <tr><td>Sueño de Coco</td><td><strong>$34.000</strong></td><td>$32.000</td></tr>
+            <tr><td>Coco &amp; dulce de leche</td><td><strong>$34.000</strong></td><td>$32.000</td></tr>
+          </tbody>
+        </table>
+        <p class="small text-muted mb-0">Cheesecake y Chocotorta son low carb por su base de queso blanco. La versión integral lleva harina de trigo integral y contiene gluten.</p>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-wa" href="https://wa.me/5491123843612?text=Hola%2C%20quiero%20consultar%20por%20el%20Pack%20Antojo" target="_blank" rel="noopener"><i class="fab fa-whatsapp me-1" aria-hidden="true"></i>Consultar por WhatsApp</a>
       </div>
     </div>
   </div>
+</div>
 
-  <!-- PIE -->
-  <footer class="text-center py-4">
-    <div class="container">
-      <p class="mb-1">Dora Batí · Pastelería artesanal</p>
-      <p class="small mb-1">Producción a pedido en Recoleta, CABA.</p>
-      <p class="small mb-0">Retiros y envíos coordinados. © 2026 Dora Batí.</p>
+<!-- WHATSAPP FLOTANTE -->
+<a class="btn-whatsapp-float" href="https://wa.me/5491123843612?text=Hola%2C%20quiero%20consultar%20por%20los%20postres" target="_blank" rel="noopener" aria-label="Consultar por WhatsApp">
+  <i class="fab fa-whatsapp fs-4" aria-hidden="true"></i><span>Consultar</span>
+</a>
+
+<!-- PIE -->
+<footer class="footer-dora py-5">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-md-4">
+        <p class="footer-title">Dora Batí</p>
+        <p class="mb-2">Pastelería artesanal hecha a pedido: tortas, meriendas, postres, salados y viandas.</p>
+        <p class="mb-0">Producción en Recoleta, CABA. Retiros y envíos.</p>
+      </div>
+      <div class="col-md-4">
+        <p class="footer-title">Catálogos</p>
+        <ul class="list-unstyled mb-0">
+          <li><a href="tortas.html">Tortas</a></li>
+          <li><a href="meriendas.html">Desayunos y meriendas</a></li>
+          <li><a href="postres.html">Postres individuales</a></li>
+          <li><a href="salados.html">Salado y viandas</a></li>
+          <li><a href="cumples.html">Cumples</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <p class="footer-title">Contacto</p>
+        <p class="mb-2"><a href="https://wa.me/5491123843612" target="_blank" rel="noopener">WhatsApp: 11 2384-3612</a></p>
+        <p class="mb-0"><a href="https://instagram.com/dorabati.pasteleria" target="_blank" rel="noopener">Instagram: @dorabati.pasteleria</a></p>
+      </div>
     </div>
-  </footer>
+    <hr class="my-4">
+    <p class="text-center small mb-0">© 2026 Dora Batí. Todos los derechos reservados.</p>
+  </div>
+</footer>
 
-  <!-- WHATSAPP FLOTANTE -->
-  <a class="whatsapp-float" href="https://wa.me/5491123843612?text=Hola%2C%20quiero%20consultar%20por%20los%20postres" target="_blank" rel="noopener" aria-label="Consultar por WhatsApp">
-    WhatsApp
-  </a>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
