@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
 
-# Enlace directo al mapa del sitio
 Sitemap: https://dorabati.com.ar/sitemap.xml
