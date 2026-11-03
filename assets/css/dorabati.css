@@ -82,7 +82,7 @@ a:hover { color: var(--vino-oscuro); }
   display: flex;
   align-items: center;
   color: #fff;
-  background-image: linear-gradient(rgba(45, 27, 20, .62), rgba(45, 27, 20, .62)), url('../img/header-bg.png');
+  background-image: linear-gradient(rgba(45, 27, 20, .62), rgba(45, 27, 20, .62)), url('../img/header-bg.jpg');
   background-size: cover;
   background-position: center;
 }
