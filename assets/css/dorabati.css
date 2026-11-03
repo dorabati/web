@@ -283,6 +283,55 @@ a:hover { color: var(--vino-oscuro); }
 .footer-dora a:hover { color: var(--dorado); text-decoration: underline; }
 .footer-title { font-family: 'Roboto Slab', serif; font-weight: 700; font-size: 1.1rem; color: var(--rosa); margin-bottom: .75rem; }
 
+/* ---------- MENÚ DESPLEGABLE "INFORMACIÓN" ---------- */
+
+.navbar-dora .dropdown-menu {
+  background-color: var(--cacao);
+  border: 1px solid rgba(255, 255, 255, .12);
+  border-radius: 12px;
+  padding: .4rem 0;
+}
+.navbar-dora .dropdown-item { color: rgba(255, 255, 255, .88); padding: .5rem 1.1rem; }
+.navbar-dora .dropdown-item:hover,
+.navbar-dora .dropdown-item:focus { background-color: rgba(255, 255, 255, .08); color: var(--dorado); }
+.navbar-dora .dropdown-item.active { background-color: transparent; color: var(--dorado); font-weight: 600; }
+.navbar-dora .dropdown-toggle.active { color: var(--dorado); font-weight: 600; }
+
+/* ---------- TESTIMONIOS ---------- */
+
+.testimonio-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid rgba(123, 45, 66, .12);
+  border-radius: 18px;
+  box-shadow: 0 2px 8px rgba(45, 27, 20, .08);
+}
+
+.testimonio-fotos { display: grid; gap: 2px; background: var(--panel); }
+.testimonio-fotos.dos { grid-template-columns: 1fr 1fr; }
+
+.testimonio-foto { display: block; width: 100%; padding: 0; border: 0; background: none; cursor: zoom-in; }
+.testimonio-foto img { display: block; width: 100%; height: auto; }
+
+.testimonio-body { display: flex; flex-direction: column; gap: 8px; flex: 1; padding: 18px 20px 20px; }
+.testimonio-body h3 { margin: 0; font-size: 1.1rem; }
+
+.testimonio-quote { margin: 0; padding-left: 14px; border-left: 4px solid var(--rosa); font-size: .98rem; }
+.testimonio-quote p { margin: 0 0 .35rem; }
+.testimonio-quote p:last-child { margin-bottom: 0; }
+
+.testimonio-link { margin-top: auto; padding-top: 6px; font-weight: 600; font-size: .95rem; }
+
+/* versión corta para la portada */
+.testimonio-destacado .testimonio-foto img { aspect-ratio: 4 / 5; object-fit: cover; object-position: center top; }
+.testimonio-destacado .testimonio-foto { cursor: pointer; }
+
+/* foto ampliada */
+.modal-foto img { max-height: 85vh; width: auto; max-width: 100%; }
+
 .btn-whatsapp-float {
   position: fixed;
   bottom: 22px;
