@@ -28,7 +28,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&family=Roboto+Slab:wght@600;700&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
-  <link href="assets/css/dorabati.css?v=1" rel="stylesheet">
+  <link href="assets/css/dorabati.css?v=2" rel="stylesheet">
 
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y6DNZGLE23"></script>
   <script>
@@ -78,7 +78,7 @@
 <body>
 
 <!-- MENÚ -->
-<nav class="navbar navbar-expand-lg navbar-dark navbar-dora sticky-top" aria-label="Menú principal">
+<nav class="navbar navbar-expand-xl navbar-dark navbar-dora sticky-top" aria-label="Menú principal">
   <div class="container">
     <a class="navbar-brand" href="index.html">
       <img class="logo-nav" src="assets/img/logo.png" alt="Logo de Dora Batí" width="44" height="44">
@@ -88,14 +88,20 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="menuPrincipal">
-      <ul class="navbar-nav ms-auto align-items-lg-center">
+      <ul class="navbar-nav ms-auto align-items-xl-center">
         <li class="nav-item"><a class="nav-link" href="tortas.html">Tortas</a></li>
         <li class="nav-item"><a class="nav-link" href="meriendas.html">Desayunos y meriendas</a></li>
         <li class="nav-item"><a class="nav-link" href="postres.html">Postres individuales</a></li>
         <li class="nav-item"><a class="nav-link" href="salados.html">Salado y viandas</a></li>
         <li class="nav-item"><a class="nav-link" href="cumples.html">Cumples</a></li>
-        <li class="nav-item"><a class="nav-link" href="filosofia.html">Nuestra filosofía</a></li>
-        <li class="nav-item"><a class="nav-link" href="envios.html">Envíos</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="menuInformacion" role="button" data-bs-toggle="dropdown" aria-expanded="false">Información</a>
+          <ul class="dropdown-menu" aria-labelledby="menuInformacion">
+            <li><a class="dropdown-item" href="filosofia.html">Nuestra filosofía</a></li>
+            <li><a class="dropdown-item" href="testimonios.html">Testimonios</a></li>
+            <li><a class="dropdown-item" href="envios.html">Envíos</a></li>
+          </ul>
+        </li>
         <li class="nav-item"><a class="nav-link" href="#como-pedir">Cómo pedir</a></li>
       </ul>
     </div>
@@ -264,8 +270,74 @@
     </div>
   </section>
 
+  <!-- TESTIMONIOS -->
+  <section class="py-5" id="testimonios" aria-labelledby="testimonios-titulo">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold" id="testimonios-titulo">Lo que dicen quienes nos eligen</h2>
+        <p class="text-muted mb-0">Mensajes y fotos que nos comparten nuestros clientes.</p>
+      </div>
+
+      <div class="row g-4">
+
+        <div class="col-6 col-lg-3">
+          <article class="testimonio-card testimonio-destacado">
+            <a class="testimonio-foto" href="testimonios.html" aria-label="Ver todos los testimonios">
+              <img src="assets/img/testimonios/T7.jpeg" alt="Torta de manzana y coco sin azúcar, con el mensaje de una clienta" width="900" height="1600" loading="lazy" decoding="async">
+            </a>
+            <div class="testimonio-body">
+              <h3>Manzana y coco</h3>
+              <blockquote class="testimonio-quote"><p>Les encantó la torta a los nenes!! Comieron toda!!</p></blockquote>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-6 col-lg-3">
+          <article class="testimonio-card testimonio-destacado">
+            <a class="testimonio-foto" href="testimonios.html" aria-label="Ver todos los testimonios">
+              <img src="assets/img/testimonios/T5.jpeg" alt="Torta Sueño de Coco, keto y sin lactosa" width="1086" height="1600" loading="lazy" decoding="async">
+            </a>
+            <div class="testimonio-body">
+              <h3>Sueño de Coco</h3>
+              <blockquote class="testimonio-quote"><p>Liviana y sabrosa, espectacular!!!</p></blockquote>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-6 col-lg-3">
+          <article class="testimonio-card testimonio-destacado">
+            <a class="testimonio-foto" href="testimonios.html" aria-label="Ver todos los testimonios">
+              <img src="assets/img/testimonios/T3.jpeg" alt="Comentarios de clientes sobre la torta Matilda" width="1048" height="1600" loading="lazy" decoding="async">
+            </a>
+            <div class="testimonio-body">
+              <h3>Torta Matilda</h3>
+              <blockquote class="testimonio-quote"><p>Sublime.</p></blockquote>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-6 col-lg-3">
+          <article class="testimonio-card testimonio-destacado">
+            <a class="testimonio-foto" href="testimonios.html" aria-label="Ver todos los testimonios">
+              <img src="assets/img/testimonios/T4.jpeg" alt="Pan de almendras extralarge con una taza de café con leche" width="1172" height="1600" loading="lazy" decoding="async">
+            </a>
+            <div class="testimonio-body">
+              <h3>Pan de almendras</h3>
+              <blockquote class="testimonio-quote"><p>Pan de almendras extralarge.</p></blockquote>
+            </div>
+          </article>
+        </div>
+
+      </div>
+
+      <p class="text-center mt-4 mb-0">
+        <a class="btn btn-outline-dora" href="testimonios.html">Ver todos los testimonios</a>
+      </p>
+    </div>
+  </section>
+
   <!-- CÓMO PEDIR -->
-  <section class="py-5" id="como-pedir" aria-labelledby="pedir-titulo">
+  <section class="py-5 bg-panel" id="como-pedir" aria-labelledby="pedir-titulo">
     <div class="container">
       <div class="text-center mb-4">
         <h2 class="fw-bold" id="pedir-titulo">Cómo pedir</h2>
@@ -306,7 +378,7 @@
   </section>
 
   <!-- PREGUNTAS FRECUENTES -->
-  <section class="py-5 bg-panel" id="faq" aria-labelledby="faq-titulo">
+  <section class="py-5" id="faq" aria-labelledby="faq-titulo">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-lg-9">
@@ -421,6 +493,7 @@
           <li><a href="salados.html">Salado y viandas</a></li>
           <li><a href="cumples.html">Cumples</a></li>
           <li><a href="filosofia.html">Nuestra filosofía</a></li>
+          <li><a href="testimonios.html">Testimonios</a></li>
           <li><a href="envios.html">Envíos</a></li>
         </ul>
       </div>
