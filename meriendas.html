@@ -27,7 +27,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&family=Roboto+Slab:wght@600;700&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
-  <link href="assets/css/dorabati.css?v=2" rel="stylesheet">
+  <link href="assets/css/dorabati.css?v=3" rel="stylesheet">
 
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y6DNZGLE23"></script>
   <script>
@@ -75,6 +75,7 @@
             <li><a class="dropdown-item" href="filosofia.html">Nuestra filosofía</a></li>
             <li><a class="dropdown-item" href="testimonios.html">Testimonios</a></li>
             <li><a class="dropdown-item" href="envios.html">Envíos</a></li>
+            <li><a class="dropdown-item" href="informacion-nutricional.html">Información nutricional</a></li>
           </ul>
         </li>
       </ul>
@@ -108,10 +109,12 @@
         <ul class="versiones-lista">
           <li><span class="tag">Clásica</span><span>La receta tradicional.</span></li>
           <li><span class="tag">Sin azúcar agregada</span><span>Apta para diabéticos, con ingredientes de bajo índice glucémico.</span></li>
-          <li><span class="tag tag-low">Low carb</span><span>Con harina de almendras, como el pan. Para otros productos, consultame.</span></li>
+          <li><span class="tag tag-keto">Keto</span><span>Con harina de almendras y muy pocos carbohidratos netos, como el pan.</span></li>
+          <li><span class="tag tag-low">Low carb</span><span>Con harina de almendras y pocos carbohidratos netos, como el budín de manzana.</span></li>
           <li><span class="tag tag-int">Integral</span><span>Con harina de trigo integral, más económica. Contiene gluten.</span></li>
         </ul>
-        <p class="small mt-3 mb-0">Según el pedido, también puedo prepararlo con o sin lactosa.</p>
+        <p class="small mt-3 mb-1">Según el pedido, también puedo prepararlo con o sin lactosa.</p>
+        <p class="small mb-0">Mirá las calorías y los carbohidratos de cada producto en <a href="informacion-nutricional.html">información nutricional</a>. Son valores estimados.</p>
       </div>
     </div>
   </section>
@@ -131,9 +134,10 @@
               <img src="assets/img/keto/pan.jpeg" alt="Pan de harina de almendras artesanal, cortado en rebanadas" loading="lazy" decoding="async">
             </div>
             <div class="card-body p-4 text-center d-flex flex-column">
-              <div class="mb-2"><span class="tag tag-low">Low carb</span> <span class="tag">Harina de almendras</span></div>
+              <div class="mb-2"><span class="tag tag-keto">Keto</span> <span class="tag">Harina de almendras</span></div>
               <h3 class="h5">Pan de Harina de Almendras</h3>
               <p class="text-muted small mb-2">Un pan sabroso y versátil para tus desayunos y meriendas. Ideal para tostadas.</p>
+              <p class="small mb-2"><a href="informacion-nutricional.html#pan">Ver información nutricional</a></p>
               <p class="card-meta mb-2">Aproximadamente 1 kg</p>
               <p class="price-tag mt-auto">$32.000</p>
               <p class="price-int"><strong>Oferta: 2 por $60.000</strong></p>
@@ -149,8 +153,11 @@
               <img src="assets/img/premium/budin.jpg" alt="Budín artesanal casero cortado en porciones" loading="lazy" decoding="async">
             </div>
             <div class="card-body p-4 text-center d-flex flex-column">
+              <div class="mb-2"><span class="tag tag-keto">Keto</span> <span class="tag tag-low">Low carb</span> <span class="tag">Harina de almendras</span></div>
               <h3 class="h5">Budines Artesanales</h3>
               <p class="text-muted small mb-2">Sabores caseros para acompañar el desayuno, la merienda o el mate. Tamaño pequeño o grande.</p>
+              <p class="card-meta mb-1">Con almendras, todos keto salvo el de manzana (low carb)</p>
+              <p class="small mb-2"><a href="informacion-nutricional.html#budines">Ver información nutricional</a></p>
               <p class="price-tag mt-auto">Desde $14.000</p>
               <p class="price-int"><span class="tag tag-int">Integral</span> desde <strong>$10.000</strong></p>
               <button type="button" class="btn btn-outline-dora" data-bs-toggle="modal" data-bs-target="#modalBudines">Ver sabores y tamaños</button>
@@ -165,8 +172,10 @@
               <img src="assets/img/premium/frutilla.jpeg" alt="Tarta dulce de frutillas con crema pastelera" loading="lazy" decoding="async">
             </div>
             <div class="card-body p-4 text-center d-flex flex-column">
+              <div class="mb-2"><span class="tag tag-keto">Keto</span> <span class="tag">Ricota y frutilla, con almendras</span></div>
               <h3 class="h5">Tartas Dulces</h3>
-              <p class="text-muted small mb-2">Ricota, frutilla, pasta frola y coco con dulce de leche, para compartir en familia.</p>
+              <p class="text-muted small mb-2">Ricota, frutilla, manzana, pasta frola y coco con dulce de leche, para compartir en familia.</p>
+              <p class="small mb-2"><a href="informacion-nutricional.html#tartas">Ver información nutricional</a></p>
               <p class="card-meta mb-2">8 a 10 porciones</p>
               <p class="price-tag mt-auto">Desde $48.000</p>
               <p class="price-int"><span class="tag tag-int">Integral</span> desde <strong>$38.000</strong></p>
@@ -182,8 +191,10 @@
               <img src="assets/img/premium/brownie.jpg" alt="Brownies artesanales de chocolate" loading="lazy" decoding="async">
             </div>
             <div class="card-body p-4 text-center d-flex flex-column">
+              <div class="mb-2"><span class="tag tag-keto">Keto</span> <span class="tag">Harina de almendras</span></div>
               <h3 class="h5">Brownies</h3>
               <p class="text-muted small mb-2">Intensos y húmedos, con todo el sabor del chocolate. Con o sin nuez.</p>
+              <p class="small mb-2"><a href="informacion-nutricional.html#brownies">Ver información nutricional</a></p>
               <p class="price-tag mt-auto">$6.000 c/u</p>
               <p class="price-int mb-1"><strong>Caja de 12 unidades: $60.000</strong></p>
               <p class="price-int"><span class="tag tag-int">Integral</span> <strong>$5.000</strong> c/u</p>
@@ -216,8 +227,10 @@
               <img src="assets/img/meriendas/galletitas.JPG" alt="Galletitas dulces artesanales con formas" loading="lazy" decoding="async">
             </div>
             <div class="card-body p-4 text-center d-flex flex-column">
+              <div class="mb-2"><span class="tag tag-keto">Keto</span> <span class="tag">Harina de almendras</span></div>
               <h3 class="h5">Galletitas artesanales</h3>
               <p class="text-muted small mb-2">Para acompañar el mate, el café o disfrutar algo rico. Consultame por las variedades disponibles.</p>
+              <p class="small mb-2"><a href="informacion-nutricional.html#galletitas">Ver información nutricional</a></p>
               <p class="price-tag mt-auto">$15.000 el ¼ kg</p>
               <p class="price-int"><span class="tag tag-int">Integral</span> <strong>$10.000</strong> el ¼ kg</p>
               <a class="btn btn-outline-dora" href="https://wa.me/5491123843612?text=Hola%2C%20quisiera%20consultar%20por%20las%20galletitas" target="_blank" rel="noopener">Consultar</a>
@@ -334,7 +347,7 @@
         <table class="table tabla-precios mb-3">
           <thead><tr><th>Tarta</th><th>Precio</th><th>Integral</th></tr></thead>
           <tbody>
-            <tr><td>Tarta dulce común <span class="sub">Ricota · Frutilla</span></td><td><strong>$48.000</strong></td><td>$38.000</td></tr>
+            <tr><td>Tarta dulce común <span class="sub">Ricota · Frutilla · Manzana (con o sin crumble)</span></td><td><strong>$48.000</strong></td><td>$38.000</td></tr>
             <tr><td>Tarta dulce especial <span class="sub">Dulce de leche y coco · Frola</span></td><td><strong>$55.000</strong></td><td>$45.000</td></tr>
           </tbody>
         </table>
@@ -427,6 +440,7 @@
           <li><a href="filosofia.html">Nuestra filosofía</a></li>
           <li><a href="testimonios.html">Testimonios</a></li>
           <li><a href="envios.html">Envíos</a></li>
+          <li><a href="informacion-nutricional.html">Información nutricional</a></li>
         </ul>
       </div>
       <div class="col-md-4">

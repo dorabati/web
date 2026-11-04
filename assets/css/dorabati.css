@@ -368,3 +368,49 @@ a:hover { color: var(--vino-oscuro); }
   .card-product, .catalog-card, .btn-whatsapp-float { transition: none; }
   .card-product:hover, .catalog-card:hover, .btn-whatsapp-float:hover { transform: none; }
 }
+
+/* ---------- INFORMACIÓN NUTRICIONAL ---------- */
+
+.controles-nutri {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 24px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.indice-nutri { display: flex; flex-wrap: wrap; gap: 8px; }
+.indice-nutri a {
+  text-decoration: none;
+  font-size: .9rem;
+  font-weight: 600;
+  padding: 5px 14px;
+  border-radius: 20px;
+  background: #fff;
+  border: 1px solid rgba(123, 45, 66, .35);
+}
+.indice-nutri a:hover { background: var(--panel); }
+
+.vista-switch { display: inline-flex; border: 1px solid rgba(123, 45, 66, .35); border-radius: 20px; overflow: hidden; background: #fff; }
+.vista-switch .btn { border: 0; border-radius: 0; font-weight: 600; color: var(--vino); padding: 5px 16px; }
+.vista-switch .btn.active { background: var(--vino); color: #fff; }
+
+body[data-vista="porcion"] .vista-100g { display: none; }
+body[data-vista="100g"] .vista-porcion { display: none; }
+
+.seccion-nutri .section-heading .tag { vertical-align: middle; margin-left: 4px; }
+.bloque-nutri { margin-bottom: 1.5rem; }
+.bloque-titulo { margin-bottom: .5rem; }
+.bloque-titulo .tag { vertical-align: middle; }
+
+.tabla-nutri { background: #fff; border-radius: 12px; overflow: hidden; font-size: .92rem; --bs-table-bg: #fff; }
+.tabla-nutri thead th { background: var(--panel); white-space: normal; vertical-align: bottom; }
+.tabla-nutri tbody th { font-weight: 600; text-align: left !important; white-space: normal; min-width: 150px; }
+.tabla-nutri .tag { margin-left: 4px; padding: 1px 8px; font-size: .7rem; }
+
+.notas-nutri { padding-left: 1.2rem; margin-top: .5rem; }
+.notas-nutri li { margin-bottom: .25rem; }
+
+@media (max-width: 575.98px) {
+  .tabla-nutri tbody th { position: sticky; left: 0; background: #fff; min-width: 120px; box-shadow: 1px 0 0 rgba(123, 45, 66, .15); }
+}
