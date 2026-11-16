@@ -228,6 +228,21 @@ a:hover { color: var(--vino-oscuro); }
 .tabla-precios td strong { color: var(--vino); }
 .tabla-precios .sub { display: block; font-size: .85rem; color: var(--texto-suave); }
 
+/* ---------- ESQUEMA DE CAPAS (corte de la torta) ---------- */
+
+.esq-figura { margin: 0 0 1rem; padding: .9rem .6rem .7rem; background: var(--fondo); border-radius: 14px; text-align: center; }
+.esq-torta { display: block; width: 100%; max-width: 360px; height: auto; margin: 0 auto; }
+.esq-plato { fill: var(--cacao); }
+.esq-cobertura { fill: var(--rosa); }
+.esq-bizcochuelo { fill: #EDD9B2; stroke: var(--dorado); stroke-width: 1; }
+.esq-relleno { fill: var(--vino); }
+.esq-guia line { stroke: var(--texto-suave); stroke-width: 1; stroke-dasharray: 2 3; }
+.esq-texto { font-family: 'Jost', sans-serif; font-size: 13px; fill: var(--texto); }
+.esq-texto-relleno { fill: var(--vino); font-weight: 700; }
+.esq-texto-chico { font-size: 11.5px; fill: var(--texto-suave); }
+.esq-pie { margin-top: .5rem; font-size: .92rem; color: var(--texto); }
+.esq-pie strong { color: var(--vino); }
+
 /* ---------- PÁGINA DE INICIO ---------- */
 
 .catalog-link { display: block; height: 100%; color: inherit; text-decoration: none; }
